@@ -1,0 +1,596 @@
+# ADMET Modeler(TM) input parameter file. Version 10.3.0.0
+
+# All keywords are followed by a tab and then the value(s) that the user wishes to assign
+# to that parameter.  All comment lines begin with the '#' symbol.
+
+# Indicate what type of model is being built.
+# Available model types are:
+# RMLP: Regression Multilayer Perceptron (Artificial Neural Network Ensemble)
+# CMLP: Classification Multilayer Perceptron (Artificial Neural Network Ensemble)
+# RSVM: Regression Support Vector Machine
+# CSVM: Classification Support Vector Machine
+# KPLS: Kernel Partial Least Squares Regression
+# PLS: Multiple Linear Regression (stored in .pls file type)
+Model Type:	CMLP
+
+# Modeler uses pseudo-random number generator in many of its functions. Specifically, initial
+# Kohonen map, initial ANN weights, etc., are randomized. The sequence of pseudo-random numbers,
+# however, is deterministic and is always the same for the same initial parameter called 'Random Seed'.
+# The parameter listed below preserves the original Random Seed, so that project reload will restore
+# all the conditions of the first model training. If you want different randomization,
+# then change its value using the Generate seed button on the Variable selection page.
+Random number seed	95635
+
+# Build models with the logs of the absolute dependent variable values.  If your dependent
+# variable is already converted to log values, set 'convert_to_logs' to False.  If it is not, set this
+# parameter to True and the program will perform this conversion internally.
+Convert output to logs	False
+
+# Minimum percentage of the initial data set to be set aside as an external test set.
+Minimum test set percent	20
+
+# The integer value assigned to test_set_selection_method determines how Modeler
+# will select the compounds that will be used in the test set.  A default value of '0'
+# causes the test set to be sampled from the clusters of a Kohonen SOM, '1' selects
+# the test set within fixed intervals from a sorted data set, '2' means random selection,
+# '3' denotes test set selected manually, '4' refers to the method of K-means.
+Test set selection method	0
+
+# The MinInputCV is the lowest acceptable variability, defined as coefficient of variation
+# (CV expressed in %), in a descriptor. Descriptors with less CV than this value are removed
+# as candidates.
+Minimum input CV	1
+
+# The minrep_limit is the lowest acceptable number of non-zero entries in a descriptor.
+# Descriptors with fewer non-zero entries than this value are removed as candidates.
+Minimum representation	4
+
+# The maxabsrho_limit is the highest acceptable correlation between raw descriptors.
+# Descriptors with pairwise correlations greater than this value are removed as candidates.
+Maximum input correlation	0.98
+
+# SA Method specifies the method used for sensitivity analysis during ensemble training:
+# 0 - by input gradient
+# 1 - by truncated linear analysis (default)
+# 2 - by iterative truncated linear analysis
+# 3 - by retraining
+# 4 - by genetic algorithm
+SA Method	1
+
+# GA Run By specifies the scope to run GA for:
+# 0 - PerGrid
+# 1 - PerRow (default)
+# 2 - PerCell
+GA Run By	1
+GA Max Steps	30000
+GA Max Consecutive Failed Steps	100
+GA Max Consecutive Worse Steps	500
+GA Max Consecutive Steps Without Improving Best Verification	1000
+GA Number Of Components	5
+GA Percent Of Descriptors To Select	50
+GA Mutation Rate	0.9
+GA Max Training	1000
+
+# Remove correlated descriptors by:
+# 0 - Randomly : if two or more descriptors are correlated, one of them will be removed randomly
+# 1 - By Lowest Rank : remove descriptor by lowest Spearman rank regarding to dependent variable
+Descriptor Filter Method	1
+
+# Setting reuse_som to 1 will prevent Modeler from running a Kohonen SOM to partition
+# the data into sets.  Instead, it will read a SOM network from the disk that carries the.
+# corresponding name and use that instead.
+Reuse Kohonen	False
+
+# If the Kohonen size value is '0', Modeler will determine the size of the Kohonen.
+# self-organizing map automatically.  If the value is non-zero, it will be used as the
+# number of cells per side of the square Kohonen SOM.
+Kohonen size	0
+
+# If set to a high number, it will be 1/4 the map size.
+Kohonen neighborhood	100
+
+# The Minimum neurons and Maximum neurons parameters describe the range in numbers of neural network neurons
+# over which Modeler will build ensemble models.  The Neurons step parameter is the increment by which the
+# number of neurons is increased during each iteration.
+# For example, setting Minimum neurons to 1, Maximum neurons to 7, and Neurons step to 2 will tell Modeler to
+# build ANNE's containing 1, 3, 5, and 7 neurons.
+# Either of Minimum, Maximum, or Step parameters can be replaced by the 'Auto' keyword. In that case their
+# values will be calculated from the available data size with maximum model coverage in mind. Place explicit
+# numerical value to override this behavior.
+Minimum neurons	1
+Maximum neurons	18
+Neurons step	2
+
+# The Minimum inputs and Maximum inputs parameters describe the range in numbers of input variables that
+# the user wishes Modeler to search over when training ANNE's.  The Inputs step parameter is the increment by
+# which the number of input variables is increased during each iteration.
+# For example, setting Minimum ANN inputs to 3, Maximum ANN inputs to 24, and ANN Inputs step to 3 will tell
+# Modeler to build ANN's containing the most sensitive 3, 6, 9, 12, 15, 18, 21, and 24 input variables that are
+# available to it.
+# Either of Minimum, Maximum, or Step parameters can be replaced by the 'Auto' keyword. In that case their
+# values will be calculated from the available data size with maximum model coverage in mind. Place explicit
+# numerical value to override this behavior.
+Minimum ANN inputs	25
+Maximum ANN inputs	295
+ANN Inputs step	25
+
+# The number of Monte Carlo tries for initial guess weights
+NUMBER OF MONTE CARLO TRIES	1
+
+# The number of consecutive times verify objective function must be greater than its lowest value before network training is stopped
+Early Stopping Count	15
+
+# The nets_in_ensemble parameter determines how many neural networks comprise each ensemble.
+Networks per ANNE	33
+
+# The (nets_multiple * nets_in_ensemble) equals the total number of neural networks to be trained.
+ANNE nets multiple	5
+
+# Limit the architecture in any ANNE so that the maximum number of optimized weights used to fit
+# the network does not exceed a specified percent of the number of data points to avoid overfitting.
+Maximum weights to data percent	75
+
+# Type of merit function to be used in selecting best nets for an ensemble:
+# 0 -> verify set RMSE
+# 1 -> mf * (verify set RMSE) + (1 - mf) * |verify set RMSE - training set RMSE|
+# where 'mf' stands for Merit Factor
+# Changing these values from their defaults is not recommended or supported for classification models.
+Merit function	1
+Merit factor	0.5
+
+# Train regression ANNE with antilog output nodes and logarithmic averaging
+# of the resulting ensemble.
+ANNE USE LOGARITHMIC AVERAGING	False
+
+# Use averaging method for all member networks in classification model building
+ANNC USE SINGLE THRESHOLD	False
+
+# Use verify set in optimizing threshold for all member networks in classification model building
+ANNC USE VERIFY FOR THRESHOLD	False
+
+# Use different criterion for ANNC model selection
+# 0 -> Youden Index.
+# 1 -> Cohen's Kappa Coefficient.
+# 2 -> Normalized Product Coefficient (sensitivity*specificity, but corrected to yield 1 for perfect result, and 0 for random result).
+ANNC ENSEMBLE SELECTION METHOD	0
+
+# Set a minimum of specificity or sensitivity of model performance
+ANNC USE MINIMUM SS	False
+
+# The minimum was set on specificity or sensitivity
+# 0 -> Specificity.
+# 1 -> Sensitivity.
+ANNC SPECIFICITY OR SENSITIVITY	0
+
+# The value of the minimum specificity or sensitivity, ranging (0,1)
+ANNC MINIMUM SS VALUE	0.8
+
+# Use user-specified weight for the negative class
+ANNC USE WEIGHT	False
+
+# The weight for the negative class, ranging (0,1)
+ANNC NEGATIVE WEIGHT VALUE	0.5
+
+# Refine threshold for all ensembles in classification model building
+ANNC REFINE THRESHOLD	True
+
+# Retraining mode
+Retraining Mode	False
+
+# List of models to retrain
+Retraining List	0
+
+# The nets_per_svme parameter determines how many SVM models comprise each ensemble.
+Networks per SVME	33
+
+# The net_pool_per_svme equals the total number of SVM models to be trained.
+Net Pool Per SVME	40
+
+# The Minimum SVM inputs and Maximum SVM inputs parameters describe the range in numbers of input variables
+# that the user wishes Modeler to search over when training SVM's.  The Inputs step parameter is the increment
+# by which the number of input variables is increased during each iteration.
+# For example, setting Minimum SVM inputs to 3, Maximum SVM inputs to 24, and SVM inputs step to 3 will tell Modeler to
+# build SVM's containing the most sensitive 3, 6, 9, 12, 15, 18, 21, and 24 input variables that are
+# available to it.
+# Either of Minimum, Maximum, or Step parameters can be replaced by the 'Auto' keyword. In that case their
+# values will be calculated from the available data size with maximum model coverage in mind. Place explicit
+# numerical value to override this behavior.
+Minimum SVM inputs	25
+Maximum SVM inputs	295
+SVM Inputs step	25
+
+# The nets_per_kpls parameter determines how many KPLS models comprise each ensemble.
+Networks per KPLS	33
+
+# The net_pool_per_kpls equals the total number of KPLS models to be trained.
+Net Pool Per KPLS	40
+
+# The Minimum KPLS inputs and Maximum KPLS inputs parameters describe the range in numbers of input variables
+# that the user wishes Modeler to search over when training KPLS's.  The Inputs step parameter is the increment
+# by which the number of input variables is increased during each iteration.
+# For example, setting Minimum KPLS inputs to 3, Maximum KPLS inputs to 24, and KPLS inputs step to 3 will tell Modeler to
+# build KPLS's containing the most sensitive 3, 6, 9, 12, 15, 18, 21, and 24 input variables that are
+# available to it.
+# Either of Minimum, Maximum, or Step parameters can be replaced by the 'Auto' keyword. In that case their
+# values will be calculated from the available data size with maximum model coverage in mind. Place explicit
+# numerical value to override this behavior.
+Minimum KPLS inputs	25
+Maximum KPLS inputs	295
+KPLS Inputs step	25
+
+# The 'Kernel type' paremeter tells ADMET Modeler which kernel function to use during KPLS model building.
+# Allowed numerical values are: 0=Linear, 1=Polynomial, 2=RBF, 3=Sigmoid. RBF is default.
+Kernel type	2
+
+# The KPLSParameterMin and KPLSParameterMax values describe the range over which the kernel scaling parameter will be
+# optimized as ADMET Modeler builds KPLS models.  The KPLSParameterRes parameter is the precision with which the
+# kernel parameter value is optimized.
+Minimum kernel parameter	1
+Maximum kernel parameter	10000
+Kernel parameter resolution	1
+
+# The Minimum MLR inputs and Maximum MLR inputs parameters describe the range in numbers of input variables
+# that the user wishes Modeler to search over when training multiple linear regression models.  The Inputs
+# step parameter is the increment by which the number of input variables is increased during each iteration.
+# For example, setting Minimum MLR inputs to 3, Maximum MLR inputs to 24, and MLR inputs step to 3 will tell
+# Modeler to build MLR's containing the best 3, 6, 9, 12, 15, 18, 21, and 24 input variables that are
+# available to it.
+# Either of Minimum, Maximum, or Step parameters can be replaced by the 'Auto' keyword. In that case their
+# values will be calculated from the available data size with maximum model coverage in mind. Place explicit
+# numerical value to override this behavior.
+Minimum MLR inputs	25
+Maximum MLR inputs	295
+MLR Inputs step	25
+
+# The Add Constant parameter determines if a constant column of 1s is added when building the MLR model.
+# This term will determine the intercept of the linear model. Default to be true. If set to false, then 
+# there will be no intercept of the linear model.
+MLR Add Constant	True
+
+# The output variable parameter is the name of the dependent variable that the data is to be
+# modeled against.
+Output variable	FOUND_BY
+
+# The input_variables parameter lists the names of the descriptors and other user-provided data
+# columns that you wish to have Modeler evaluate for inclusion into its models.  The variables
+# listed here are merely candidates: only a useful subset of them will actually be used to train
+# the final neural network ensemble.
+Input variables
+AP_FWeight
+MWt
+MolVol
+VMcGowan
+N_Atoms
+N_Carbon
+N_Hydrgn
+N_Ntrgen
+N_Oxygen
+N_Phsphr
+N_Sulfur
+N_Fluorn
+N_Chlorn
+N_Bromin
+N_Iodine
+N_Halogen
+N_Nonorgn
+N_Metal
+N_Bonds
+N_FrRotB
+F_SgleB
+F_DbleB
+F_TpleB
+F_AromB
+F_AFRBWF
+N_CYPAtoms
+N_CYPSites
+N_AOXSites
+N_UGTSites
+N_Rings
+N_AromR
+N_AlipR
+N_Pisyms
+N_IsolLP
+N_Kekule
+Herndon
+X0
+X1
+X2
+Kappa1
+Kappa2
+Kappa3
+Wiener
+T_RDmtr
+Blbn_J
+Blbn_MSD
+SsCH3
+SssCH2
+SsssCH
+SssssC
+SdCH2
+SdsCH
+SdssC
+SaaCH
+SaasC
+SaadC
+SaaaC
+StCH
+StsC
+SssssN
+SsNH2
+SssNH
+SsssN
+SdNH
+SdsN
+SdssN
+SaaN
+SaaNH
+SaasN
+SddsN
+SaaaN
+StN
+StdN
+SsOH
+SssO
+SsO-
+SdO
+SaaO
+SdsssP
+SssssP
+SddssS
+SsSH
+SssS
+SdssS
+SdS
+SaaS
+SsF
+SsCl
+SsBr
+SsI
+SHsOH
+SHdNH
+SHsNH2
+SHssNH
+SHsSH
+SHCH_321
+SHdCH2
+SHdsCH
+SHaaCH
+SHtCH
+AlHdrxl_-OH
+ArHdrxl_-OH
+Carbonyl_C=O
+Ether___-O-
+PriAmine_-NH2
+PriAmAli_-NH2
+PriAmAro_-NH2
+SecAmine_>NH
+TerAmine_>N-
+QuaAmine_>[N+]<
+ArNitrog_=N-
+Imine___=N-
+Nitrile_C#N
+Thiol___-SH
+ThioCrbl_C=S
+Sulfide_-S-
+Phsphine_>P-
+HydxlAmn_>N-O-
+Oxime___=N-O-
+Nitroso_-N=O
+N-oxide_>[N+][O-]
+Hdrzine_>N-N<
+Hdrzone_=N-N<
+Azo_____-N=N-
+ThioAmin_>N-S-
+Disulfde_-S-S-
+Sulfoxde_>S=O
+Nitro___-NO2
+Ntrosam_>N-N=O
+Azide___-N=N#N
+Sulfone_>S(=O)=O
+Triazo__-N-N-N-
+Oxadiazo_-N-O-N-
+Thiadiaz_-N-S-N-
+NNitro__>N-NO2
+Sulfonat_-SO3-
+Sulfonmd_-SO2-N<
+PriSlfmd_-SO2-NH2
+Phsponat_-PO3<
+Tetrazo_-NNNN-
+Sulfamid_>NSO2N<
+Sulfate_-OSO3
+Phspate_O=PO3<-
+PhspatS_O=PS(k)O(3-k)<-
+SPhspat_S=PO3<-
+SPhspatS_S=PS(k)O(3-k)<-
+PhspatN_O=PN(n)O(3-n)<<<
+SPhspatN_S=PN(n)O(3-n)<<<
+PhsptSN_O=PS(k)N(n)O(3-n-k)<<
+AlCbxyl_-COOH
+ArCbxyl_-COOH
+Ester___C(=O)OC
+Amide___C(=O)N<
+Thioamd_C(=S)N<
+Amidine_C(=N-)N<
+Thiocynt_-S-C#N
+Urea____>NC(=O)N<
+Carbmte_>NC(=O)O<
+Guandne_>NC(=N-)N<
+Imide___O=C(N-)C=O
+Barbitur_C1C(=O)NC(=O)NC1=O
+M_CX
+M_NO
+M_PRX
+M_UB
+M_HB
+M_POL
+M_AMP
+M_RNG
+M_QN
+M_NO2
+M_NCS
+AlphaAA
+PrAlphAA
+AlphaAE
+Steroid
+H_AlAcid
+H_ArAcid
+H_Phenol
+H_AlPyri
+H_Azo
+H_Nitrle
+H_Nitro
+H_SO2
+H_MultiN
+H_AmAcid
+T_Rgrav
+T_Rgeom
+T_Radmax
+T_Rada
+T_Radb
+T_Radc
+T_Rads
+T_HydroR
+T_MIRxx
+T_MIRyy
+T_Dipole
+T_PSA
+T_Grav3
+FormalQ
+IHB
+PHB
+HBD
+HBDH
+HBA
+HBDo
+HBAo
+HBDn
+HBAn
+HBDch
+HBAch
+HBDoch
+HBAoch
+HBDnch
+HBAnch
+ABSQ
+ABSQon
+MaxQ
+MinQ
+NPA_ABSQ
+NPA_AQon
+NPA_AQh
+NPA_AQc
+NPA_MaxQ
+NPA_MinQ
+NPA_Q1
+NPA_Q2
+NPA_Q3
+NPA_Q4
+NPA_Q5
+NPA_Q6
+EEM_AFon
+EEM_AFc
+EEM_AFpl
+EEM_AFnp
+EEM_MaxF
+EEM_XFon
+EEM_NFon
+EEM_XFh
+EEM_XFc
+EEM_NFc
+EEM_XFpl
+EEM_NFpl
+EEM_XFnp
+EEM_NFnp
+EEM_F1
+EEM_F2
+EEM_F3
+EEM_F4
+EEM_F5
+EEM_F6
+Pi_ABSQ
+Pi_AQo
+Pi_AQn
+Pi_AQc
+Pi_MaxQ
+Pi_MinQ
+Pi_Q1
+Pi_Q2
+Pi_Q3
+Pi_Q4
+Pi_Q5
+Pi_Q6
+Pi_AFPlc
+Pi_AFMic
+Pi_MaxFPl
+Pi_MaxFMi
+Pi_FPl1
+Pi_FPl2
+Pi_FPl3
+Pi_FPl4
+Pi_FPl5
+Pi_FPl6
+Pi_FMi1
+Pi_FMi2
+Pi_FMi3
+Pi_FMi4
+Pi_FMi5
+Pi_FMi6
+EqualChi
+EqualEta
+Elephity
+N_Electr
+PolarizG
+PolarizM
+N_IoAcAt
+N_IoBaAt
+FAnion
+FCation
+FUnion
+FZwitter
+QAvgNeg
+QAvgPos
+F_NLP
+F_HBP
+
+# The method used to select a subset of 'best' ensembles
+Ensemble Selection Method	Dot Product
+# Display the rank for all models in the Matrix of Model Performance
+Display Rank	False
+# Include existing verify metrics in the ensemble selection process
+Use Verify Metrics	True
+# The maximum number of ensembles to highlight in the Matrix of Model Performances
+Highlight Ensembles	5
+# Include the RMSE metric in the ensemble selection process
+RMSE	True
+# Include the MAE metric in the ensemble selection process
+MAE	False
+# Include the SRCC metric in the ensemble selection process
+SRCC	True
+# Include the Rsqd metric in the ensemble selection process
+Rsqd	False
+# Include the Qsqd metric in the ensemble selection process
+Qsqd	True
+# Include the Slope metric in the ensemble selection process
+Slope	False
+# Include the Intercept metric in the ensemble selection process
+Intercept	False
+# Include the Sensitivity metric in the ensemble selection process
+SENS	True
+# Include the Specificity metric in the ensemble selection process
+Spec	True
+# Include the Youden Index metric in the ensemble selection process
+Youden	False
+# Include the Matthew's Correlation Coefficient metric in the ensemble selection process
+MCC	True
+# Include the False Rate metric in the ensemble selection process
+FR	False
+# Only consider ensembles with a minimum sensitivity
+Use Minimum Sensitivity	False
+# Only consider ensembles with a minimum specificity
+Use Minimum Specificity	False
+# Threshold for minimum sensitivity
+Minimum Sensitivity	0.8
+# Threshold for minimum specificity
+Minimum Specificity	0.8
+# Consider Model Complexity in the ensemble selection process
+Model Complexity	True
