@@ -1,0 +1,5122 @@
+ADMET Modeler(TM) log file. Version 10.3.0.0
+10/11/2023  9:45:34 下午
+Data file = Response_2023-10-11_04 0.889.dat
+Number of data points = 1185
+
+The following dependent variable classes were detected:
+Label	Output class
+0	0
+1	1
+
+# ================================================================================
+NON-NUMERIC INPUTS:10/11/2023  9:45:35 下午
+0 inputs contains non-numerical values:
+
+
+# ================================================================================
+IDENTICAL AND LOW VARIANCE INPUTS: 10/11/2023  9:45:35 下午
+0 inputs had a CV% of less than 1%:
+
+
+# ================================================================================
+UNDERREPRESENTED INPUTS:10/11/2023  9:45:35 下午
+28 inputs are under-represented:
+	N_Nonorgn                                       is only nonzero for	3 data points
+	N_Metal                                         is only nonzero for	1 data points
+	SdssN                                           is only nonzero for	2 data points
+	StdN                                            is only nonzero for	2 data points
+	SssssP                                          is only nonzero for	2 data points
+	SsSH                                            is only nonzero for	2 data points
+	SHsSH                                           is only nonzero for	2 data points
+	Thiol___-SH                                     is only nonzero for	2 data points
+	ThioCrbl_C=S                                    is only nonzero for	1 data points
+	Phsphine_>P-                                    is only nonzero for	2 data points
+	Nitroso_-N=O                                    is only nonzero for	2 data points
+	N-oxide_>[N+][O-]                               is only nonzero for	1 data points
+	Ntrosam_>N-N=O                                  is only nonzero for	1 data points
+	Azide___-N=N#N                                  is only nonzero for	2 data points
+	Oxadiazo_-N-O-N-                                is only nonzero for	1 data points
+	Thiadiaz_-N-S-N-                                is only nonzero for	2 data points
+	NNitro__>N-NO2                                  is only nonzero for	3 data points
+	Phsponat_-PO3<                                  is only nonzero for	2 data points
+	Tetrazo_-NNNN-                                  is only nonzero for	2 data points
+	Sulfate_-OSO3                                   is only nonzero for	1 data points
+	PhspatS_O=PS(k)O(3-k)<-                         is only nonzero for	1 data points
+	PhsptSN_O=PS(k)N(n)O(3-n-k)<<                   is only nonzero for	2 data points
+	Thiocynt_-S-C#N                                 is only nonzero for	3 data points
+	Barbitur_C1C(=O)NC(=O)NC1=O                     is only nonzero for	2 data points
+	M_NCS                                           is only nonzero for	3 data points
+	PrAlphAA                                        is only nonzero for	3 data points
+	AlphaAE                                         is only nonzero for	1 data points
+	H_SO2                                           is only nonzero for	2 data points
+
+
+# ================================================================================
+HIGHLY CORRELATED INPUTS: 10/11/2023  9:45:35 下午
+28 pairs of inputs are highly correlated:
+pairwise input correlations are detected.
+	MWt                                             correlates with:	N_Electr                                        correlation =	0.995331795713386
+	MolVol                                          correlates with:	PolarizG                                        correlation =	0.988471053543231
+	N_Atoms                                         correlates with:	N_Bonds                                         correlation =	0.99303548902421
+	N_Carbon                                        correlates with:	M_CX                                            correlation =	0.981563292864769
+	N_Hydrgn                                        correlates with:	NPA_AQh                                         correlation =	0.987435285040345
+	N_Oxygen                                        correlates with:	HBAo                                            correlation =	1
+	N_Fluorn                                        correlates with:	SsF                                             correlation =	0.999105487348202
+	N_Chlorn                                        correlates with:	SsCl                                            correlation =	0.999034112604034
+	N_Bromin                                        correlates with:	SsBr                                            correlation =	0.997184361025341
+	N_Iodine                                        correlates with:	SsI                                             correlation =	0.998415820749861
+	N_Bonds                                         correlates with:	X1                                              correlation =	0.993415470632104
+	X0                                              correlates with:	X1                                              correlation =	0.98711397455316
+	Blbn_MSD                                        correlates with:	T_Rgrav                                         correlation =	0.995729715444099
+	SdCH2                                           correlates with:	SHdCH2                                          correlation =	0.997689533909967
+	StCH                                            correlates with:	SHtCH                                           correlation =	0.998322709350723
+	SsNH2                                           correlates with:	SHsNH2                                          correlation =	0.993174376695802
+	SsOH                                            correlates with:	HBDo                                            correlation =	0.980541616195916
+	SHsOH                                           correlates with:	HBDo                                            correlation =	0.998921557037006
+	Azo_____-N=N-                                   correlates with:	H_Azo                                           correlation =	1
+	Nitro___-NO2                                    correlates with:	M_NO2                                           correlation =	0.985395344150155
+	T_Rgrav                                         correlates with:	T_Rgeom                                         correlation =	0.99605672062941
+	T_Rgeom                                         correlates with:	T_Rads                                          correlation =	0.991316250071797
+	HBDH                                            correlates with:	HBDch                                           correlation =	0.991141653954158
+	HBDo                                            correlates with:	HBDoch                                          correlation =	0.99948051602853
+	HBAch                                           correlates with:	NPA_AQon                                        correlation =	-0.98360343483044
+	EEM_AFc                                         correlates with:	EEM_AFnp                                        correlation =	0.986537611549191
+	PolarizG                                        correlates with:	PolarizM                                        correlation =	0.990884948152184
+	FCation                                         correlates with:	QAvgPos                                         correlation =	0.997239902221205
+
+
+# ================================================================================
+239 CANDIDATE INPUTS (after removing low CV, underrepresented, and highly correlated variables):
+	AP_FWeight
+	VMcGowan
+	N_Ntrgen
+	N_Phsphr
+	N_Sulfur
+	N_Halogen
+	N_FrRotB
+	F_SgleB
+	F_DbleB
+	F_TpleB
+	F_AromB
+	F_AFRBWF
+	N_CYPAtoms
+	N_CYPSites
+	N_AOXSites
+	N_UGTSites
+	N_Rings
+	N_AromR
+	N_AlipR
+	N_Pisyms
+	N_IsolLP
+	N_Kekule
+	Herndon
+	X1
+	X2
+	Kappa1
+	Kappa2
+	Kappa3
+	Wiener
+	T_RDmtr
+	Blbn_J
+	SsCH3
+	SssCH2
+	SsssCH
+	SssssC
+	SdsCH
+	SdssC
+	SaaCH
+	SaasC
+	SaadC
+	SaaaC
+	StsC
+	SssssN
+	SssNH
+	SsssN
+	SdNH
+	SdsN
+	SaaN
+	SaaNH
+	SaasN
+	SddsN
+	SaaaN
+	StN
+	SssO
+	SsO-
+	SdO
+	SaaO
+	SdsssP
+	SddssS
+	SssS
+	SdssS
+	SdS
+	SaaS
+	SsF
+	SsCl
+	SsBr
+	SsI
+	SHdNH
+	SHsNH2
+	SHssNH
+	SHCH_321
+	SHdCH2
+	SHdsCH
+	SHaaCH
+	SHtCH
+	AlHdrxl_-OH
+	ArHdrxl_-OH
+	Carbonyl_C=O
+	Ether___-O-
+	PriAmine_-NH2
+	PriAmAli_-NH2
+	PriAmAro_-NH2
+	SecAmine_>NH
+	TerAmine_>N-
+	QuaAmine_>[N+]<
+	ArNitrog_=N-
+	Imine___=N-
+	Nitrile_C#N
+	Sulfide_-S-
+	HydxlAmn_>N-O-
+	Oxime___=N-O-
+	Hdrzine_>N-N<
+	Hdrzone_=N-N<
+	ThioAmin_>N-S-
+	Disulfde_-S-S-
+	Sulfoxde_>S=O
+	Sulfone_>S(=O)=O
+	Triazo__-N-N-N-
+	Sulfonat_-SO3-
+	Sulfonmd_-SO2-N<
+	PriSlfmd_-SO2-NH2
+	Sulfamid_>NSO2N<
+	Phspate_O=PO3<-
+	SPhspat_S=PO3<-
+	SPhspatS_S=PS(k)O(3-k)<-
+	PhspatN_O=PN(n)O(3-n)<<<
+	SPhspatN_S=PN(n)O(3-n)<<<
+	AlCbxyl_-COOH
+	ArCbxyl_-COOH
+	Ester___C(=O)OC
+	Amide___C(=O)N<
+	Thioamd_C(=S)N<
+	Amidine_C(=N-)N<
+	Urea____>NC(=O)N<
+	Carbmte_>NC(=O)O<
+	Guandne_>NC(=N-)N<
+	Imide___O=C(N-)C=O
+	M_CX
+	M_NO
+	M_PRX
+	M_UB
+	M_HB
+	M_POL
+	M_AMP
+	M_RNG
+	M_QN
+	M_NO2
+	AlphaAA
+	Steroid
+	H_AlAcid
+	H_ArAcid
+	H_Phenol
+	H_AlPyri
+	H_Azo
+	H_Nitrle
+	H_Nitro
+	H_MultiN
+	H_AmAcid
+	T_Radmax
+	T_Rada
+	T_Radb
+	T_Radc
+	T_Rads
+	T_HydroR
+	T_MIRxx
+	T_MIRyy
+	T_Dipole
+	T_PSA
+	T_Grav3
+	FormalQ
+	IHB
+	PHB
+	HBD
+	HBA
+	HBAo
+	HBDn
+	HBAn
+	HBDch
+	HBDoch
+	HBAoch
+	HBDnch
+	HBAnch
+	ABSQ
+	ABSQon
+	MaxQ
+	MinQ
+	NPA_ABSQ
+	NPA_AQon
+	NPA_AQh
+	NPA_AQc
+	NPA_MaxQ
+	NPA_MinQ
+	NPA_Q1
+	NPA_Q2
+	NPA_Q3
+	NPA_Q4
+	NPA_Q5
+	NPA_Q6
+	EEM_AFon
+	EEM_AFpl
+	EEM_AFnp
+	EEM_MaxF
+	EEM_XFon
+	EEM_NFon
+	EEM_XFh
+	EEM_XFc
+	EEM_NFc
+	EEM_XFpl
+	EEM_NFpl
+	EEM_XFnp
+	EEM_NFnp
+	EEM_F1
+	EEM_F2
+	EEM_F3
+	EEM_F4
+	EEM_F5
+	EEM_F6
+	Pi_ABSQ
+	Pi_AQo
+	Pi_AQn
+	Pi_AQc
+	Pi_MaxQ
+	Pi_MinQ
+	Pi_Q1
+	Pi_Q2
+	Pi_Q3
+	Pi_Q4
+	Pi_Q5
+	Pi_Q6
+	Pi_AFPlc
+	Pi_AFMic
+	Pi_MaxFPl
+	Pi_MaxFMi
+	Pi_FPl1
+	Pi_FPl2
+	Pi_FPl3
+	Pi_FPl4
+	Pi_FPl5
+	Pi_FPl6
+	Pi_FMi1
+	Pi_FMi2
+	Pi_FMi3
+	Pi_FMi4
+	Pi_FMi5
+	Pi_FMi6
+	EqualChi
+	EqualEta
+	Elephity
+	N_Electr
+	PolarizM
+	N_IoAcAt
+	N_IoBaAt
+	FAnion
+	FUnion
+	FZwitter
+	QAvgNeg
+	QAvgPos
+	F_NLP
+	F_HBP
+
+
+# ================================================================================
+PROGRAM CONTROL SETTINGS:
+	Random number seed: 	36456
+	Dependent variable name:	Response
+	Dependent variable is:	unscrambled
+	Dependent variable is:	not converted to logs
+	SALI analysis is:	disabled
+
+	Minimum test set percent: 	20
+	Test set selection method: 	Kohonen mapping
+	Placement of excess data:	Test set
+
+	Minimum input CV: 	1
+	Minimum descriptor representation: 	4
+	Maximum input correlation: 	0.98
+	Sensitivity analysis by: 	Iterative Truncated linear analysis
+	Descriptor Filter Method: 	By Lowest Rank
+
+	Kohonen map was:	Generated
+	Kohonen map size was:	Automatic
+	Kohonen neighborhood: 	100
+	Kohonen phase I cycles: 	150
+	Kohonen phase II cycles: 	100
+
+	Minimum ANNE neurons: 	1
+	Maximum ANNE neurons: 	17
+	ANNE neuron step: 	2
+	Minimum ANNE inputs: 	25
+	Maximum ANNE inputs: 	295
+	ANNE input step: 	25
+	Networks per ensemble: 	33
+	Networks multiple: 	5
+	Number of Monte Carlo tries: 	2
+	Early stopping count: 	15
+	Maximum optimized weights percentage: 	75
+	ANNE uses logarithmic averaging: 	False
+	ANNE merit function type: 	Combined Train/Verification RMSE
+	ANNE Merit Factor:	0.5
+	ANNC use averaging method: 	False
+	ANNC use verify to optimize threshold: 	False
+	ANNC ensemble selection method: 	0
+	ANNC refine threshold: 	True
+	Ensemble Selection Method:		Dot Product
+	Display model rank:	False
+	Include verify metrics:	True
+	Number of ensembles to highlight:	5
+	(Regression) Use RMSE metric:	True
+	(Regression) Use MAE metric:	False
+	(Regression) Use SRCC metric:	True
+	(Regression) Use Rsqd metric:	False
+	(Regression) Use Qsqd metric:	True
+	(Regression) Use Slope metric:	False
+	(Regression) Use Intercept metric:	False
+	(Classification) Use Sensitivity metric:	True
+	(Classification) Use Specificity metric:	True
+	(Classification) Use Youden Index metric:	False
+	(Classification) Use Matthew's Correlation Coefficient metric:	True
+	(Classification) Use False Rate metric:	False
+	(Classification) Set minimum sensitivity:	False
+	(Classification) Minimum sensitivity threshold:	0.8
+	(Classification) Set minimum specificity:	False
+	(Classification) Minimum specificity threshold: 	0.8
+	Use Model Complexity: 	True
+# ================================================================================
+
+Data points = 1185
+Kohonen map size = 34x34
+
+Kohonen mapping start time = 10/11/2023  9:45:35 下午
+Kohonen map finish time = 10/11/2023  9:46:11 下午
+Kohonen cell counts:
+
+01 00 00 01 00 00 00 03 00 02 00 03 00 03 01 03 00 00 03 00 01 00 03 00 04 00 02 00 01 00 03 00 00 01 
+01 03 00 00 00 03 00 01 01 00 02 02 02 01 01 02 00 00 04 00 00 01 01 00 03 00 04 00 03 02 00 01 02 02 
+00 00 02 01 03 00 00 00 01 00 00 01 01 01 03 03 03 00 05 01 02 00 02 00 02 01 00 00 03 01 01 01 01 00 
+02 02 02 00 00 02 00 02 03 00 03 01 01 01 01 00 00 00 03 00 02 00 03 00 04 04 00 01 02 01 01 00 01 00 
+01 00 00 00 00 02 00 00 02 00 01 00 03 02 00 03 02 00 00 00 01 00 00 00 00 01 01 01 01 00 00 02 01 00 
+00 00 02 01 00 02 00 02 00 01 01 01 00 02 00 04 00 05 00 02 00 02 04 00 02 01 00 01 01 01 01 01 01 01 
+03 02 01 00 02 01 00 01 01 01 01 01 02 01 01 00 00 02 00 01 00 00 04 00 00 01 00 00 00 01 00 02 00 00 
+00 00 03 00 00 01 00 01 01 00 01 01 01 01 03 01 01 02 02 00 01 00 05 01 01 01 01 00 02 00 00 04 01 00 
+01 00 00 00 02 01 00 00 00 01 01 00 03 00 01 04 02 02 02 00 02 00 02 00 02 00 00 00 01 00 01 01 01 01 
+02 01 01 02 01 02 01 01 01 00 01 01 01 01 04 00 00 02 02 00 00 02 01 02 02 00 02 02 00 02 01 01 02 00 
+02 00 00 01 00 01 00 02 00 00 01 00 00 01 06 01 04 01 04 00 02 00 00 00 00 00 00 00 00 01 01 00 00 01 
+01 02 02 00 00 00 00 01 00 02 01 01 04 02 01 01 01 02 00 00 00 01 04 00 03 01 01 04 02 00 00 04 00 00 
+00 01 01 00 02 00 02 01 01 01 00 00 00 00 04 01 01 02 00 03 01 01 05 00 02 00 00 00 00 02 00 00 00 02 
+02 01 01 02 01 00 01 01 01 01 01 01 02 00 00 01 01 01 00 00 02 00 00 00 03 01 01 02 01 01 03 03 01 01 
+02 02 00 00 01 00 02 00 00 00 01 01 00 01 00 01 00 01 00 00 01 04 00 02 01 02 01 00 00 00 01 01 01 02 
+00 00 01 01 03 01 01 01 02 01 02 01 02 02 02 00 03 00 02 03 02 02 00 00 00 00 00 01 04 01 00 02 00 00 
+02 00 00 01 00 00 01 01 01 01 00 01 01 00 00 00 02 00 01 00 01 00 01 01 02 01 00 00 00 01 00 00 00 00 
+01 02 02 00 02 00 00 02 00 01 00 01 00 02 01 00 02 02 00 03 00 04 00 01 00 02 01 02 03 00 00 02 02 01 
+00 00 04 01 02 00 02 00 02 01 01 01 02 01 00 00 01 01 00 00 00 00 00 01 00 02 00 00 02 00 02 00 00 00 
+03 00 00 00 00 02 01 00 02 00 00 00 01 00 01 00 03 00 06 00 02 00 00 00 02 00 00 01 03 02 00 02 01 02 
+02 01 02 02 01 01 00 00 03 00 01 02 01 00 02 00 05 00 00 00 02 00 02 01 01 02 01 00 00 00 00 03 00 00 
+03 00 01 00 03 00 03 01 01 01 00 00 01 01 01 02 00 00 00 02 01 00 00 00 01 00 01 02 02 02 00 00 00 00 
+03 02 00 00 00 01 00 00 02 01 01 02 02 00 00 00 01 03 00 00 02 01 02 01 02 01 01 00 00 00 00 03 02 01 
+00 01 00 02 02 01 02 02 00 03 06 01 02 00 01 01 00 01 01 01 00 01 01 01 00 00 01 00 01 03 01 01 00 00 
+00 03 00 03 00 01 02 01 00 00 01 00 02 00 04 00 00 01 00 01 01 00 00 00 00 01 02 01 00 00 00 01 00 02 
+01 00 00 00 02 00 00 00 01 04 03 01 00 02 02 02 00 02 01 01 00 03 01 03 02 02 00 02 00 03 01 00 01 01 
+02 00 03 04 00 03 00 04 00 00 00 00 01 02 01 01 00 01 00 01 00 02 00 01 00 00 00 00 00 00 01 01 02 01 
+00 00 00 00 02 02 02 02 00 03 01 04 02 03 00 02 00 02 03 00 02 01 01 00 03 01 00 01 01 01 02 00 01 00 
+00 02 00 03 02 00 00 01 00 05 02 02 00 03 00 01 02 01 00 00 00 00 02 02 00 01 01 02 00 01 00 00 00 01 
+00 02 01 01 06 00 04 06 01 01 04 00 00 02 01 01 00 00 02 00 02 01 00 01 01 03 01 01 01 02 02 00 03 01 
+00 00 00 00 01 00 01 00 00 03 01 03 01 01 00 01 03 03 00 01 00 00 02 00 00 02 00 00 02 00 01 00 03 01 
+00 03 02 00 04 00 02 00 03 00 02 01 01 01 01 02 00 00 02 03 01 01 00 03 00 03 00 01 02 00 02 01 00 00 
+00 00 03 03 00 00 02 05 00 02 01 00 00 00 00 00 00 01 01 01 00 02 01 00 00 01 02 00 01 00 01 02 01 03 
+01 01 03 01 03 01 00 00 00 02 00 01 01 01 00 02 00 02 00 00 03 01 00 00 04 00 00 02 02 00 02 02 01 00 
+
+Kohonen Map of Output Means
+0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 5.00E-01 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 6.67E-01 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+1.00E+00 6.67E-01 0.00E+00 0.00E+00 0.00E+00 6.67E-01 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 5.00E-01 5.00E-01 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 3.33E-01 6.67E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 7.50E-01 7.50E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 6.67E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 2.50E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 
+0.00E+00 5.00E-01 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 7.50E-01 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 3.33E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 8.00E-01 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 1.00E+00 
+1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 2.50E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 1.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 3.33E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 
+0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 1.00E+00 1.00E+00 7.50E-01 1.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 2.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 
+0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 3.33E-01 0.00E+00 1.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 3.33E-01 1.00E+00 1.00E+00 
+1.00E+00 5.00E-01 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 1.00E+00 1.00E+00 
+0.00E+00 0.00E+00 1.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 5.00E-01 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 3.33E-01 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 7.50E-01 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+1.00E+00 5.00E-01 5.00E-01 0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 6.67E-01 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 
+0.00E+00 0.00E+00 1.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 1.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 
+5.00E-01 0.00E+00 0.00E+00 1.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 2.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 6.67E-01 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 3.33E-01 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 5.00E-01 1.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 7.50E-01 0.00E+00 3.33E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 1.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 5.00E-01 1.00E+00 1.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 8.00E-01 5.00E-01 5.00E-01 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 1.00E+00 2.50E-01 0.00E+00 0.00E+00 1.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 1.00E+00 5.00E-01 5.00E-01 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 6.67E-01 1.00E+00 1.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 0.00E+00 0.00E+00 7.50E-01 0.00E+00 5.00E-01 0.00E+00 1.00E+00 0.00E+00 1.00E+00 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 3.33E-01 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 3.33E-01 1.00E+00 0.00E+00 0.00E+00 1.00E+00 8.00E-01 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+0.00E+00 0.00E+00 3.33E-01 0.00E+00 1.00E+00 1.00E+00 0.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 1.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 5.00E-01 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 0.00E+00 
+
+Total cells with 0 data points = 488
+Total cells with 1 data points = 335  (28.3% of data set)
+Total cells with 2 data points = 209  (35.3% of data set)
+Total cells with 3 data points = 81  (20.5% of data set)
+Total cells with 4 data points = 31  (10.5% of data set)
+Total cells with 5 data points = 7  (3.% of data set)
+Total cells with 6 data points = 5  (2.5% of data set)
+
+
+
+Training set data points (632):
+1	4	5	7	8	9	10	11	16	18	19	21	22	23	24	25	26	28	29	30	31	33	35	38	39	41	42	44	45	47	48	49	50	51	52	53	54	56	58	61	62	63	64	65	68	69	70	73	75	76	78	79	80	84	85	86	88	89	91	92	93	96	97	99	101	103	104	105	109	110	111	112	113	114	116	117	118	119	120	121	122	123	126	127	129	132	135	137	138	140	144	145	146	148	149	152	156	158	161	162	163	164	165	166	167	169	170	172	173	174	175	177	178	180	182	186	188	189	190	191	192	193	194	195	196	197	199	200	201	203	204	206	208	209	210	213	214	215	216	217	220	222	223	224	226	228	231	232	234	235	237	238	240	241	242	243	244	245	248	252	254	256	257	259	260	261	262	264	265	266	268	269	273	274	275	276	279	280	281	283	288	290	291	296	297	298	299	300	302	305	307	308	312	314	315	317	318	320	321	323	325	326	327	328	329	330	331	332	333	334	335	337	338	339	341	343	345	346	348	350	352	353	354	355	357	361	362	364	365	368	372	373	374	377	380	381	382	383	384	385	386	387	388	390	391	394	396	399	400	407	408	409	410	412	413	414	415	416	417	420	421	424	426	427	428	429	432	433	434	438	441	445	446	447	449	451	452	454	455	457	458	461	463	464	466	467	469	470	477	478	480	482	484	485	486	489	491	492	494	495	498	499	500	501	502	503	504	505	506	507	512	513	515	522	523	524	525	530	531	533	534	535	536	537	538	540	543	544	546	548	550	559	560	562	564	565	566	567	568	569	570	571	574	575	576	578	579	580	583	585	588	589	592	593	594	596	597	599	600	601	606	609	610	611	620	622	623	624	625	626	627	628	629	630	632	642	643	644	648	652	653	654	657	658	659	660	661	665	666	667	668	669	674	676	679	680	682	683	684	685	686	687	688	692	695	697	698	699	700	705	706	712	713	717	718	719	722	723	724	725	726	727	731	732	733	736	739	740	743	744	748	749	751	753	757	758	761	763	765	766	769	772	775	776	777	778	779	781	783	785	793	794	797	801	802	805	808	809	810	813	814	815	816	817	819	820	822	824	827	828	831	832	834	835	840	843	844	845	849	851	852	853	854	855	856	857	858	859	860	864	865	866	868	869	870	872	874	879	883	885	887	890	892	893	894	898	904	907	909	910	911	915	917	918	925	926	928	930	931	932	933	935	937	938	939	943	944	948	949	950	956	960	961	963	964	965	966	969	970	971	972	973	974	975	976	977	979	980	983	989	999	1000	1004	1006	1007	1010	1011	1013	1014	1015	1017	1020	1022	1029	1031	1033	1035	1036	1037	1040	1041	1042	1049	1051	1053	1059	1060	1063	1064	1066	1067	1068	1075	1076	1077	1078	1082	1083	1084	1086	1088	1092	1095	1098	1099	1100	1107	1108	1110	1114	1115	1117	1118	1120	1123	1124	1125	1126	1128	1132	1134	1136	1139	1142	1144	1145	1147	1153	1154	1160	1161	1163	1164	1165	1166	1169	1173	1174	1175	1178	1179	1183	
+
+Verify set data points (316):
+2	17	20	59	71	77	82	94	98	102	106	115	124	128	133	134	136	142	143	151	153	154	155	176	187	198	207	218	219	225	227	229	230	233	236	239	247	251	255	270	271	272	277	282	285	287	289	294	295	301	303	306	309	311	319	324	336	344	347	349	351	356	367	370	371	389	392	395	397	398	401	403	405	406	418	419	422	423	430	436	437	439	444	448	453	456	459	468	472	474	476	479	483	490	493	496	508	511	514	516	520	521	528	539	541	545	547	549	551	557	561	563	581	582	586	598	602	604	612	614	615	618	619	631	635	636	640	641	646	647	649	650	651	655	662	664	670	671	672	673	677	678	689	691	694	696	702	707	708	709	710	715	716	720	734	737	745	750	752	754	756	759	760	767	770	771	773	780	782	784	787	788	789	791	795	796	798	803	806	811	812	821	823	825	826	830	833	836	837	838	841	842	846	847	848	861	867	876	877	881	882	884	888	891	895	896	897	899	902	903	906	908	912	913	916	920	922	923	924	929	934	936	940	941	942	946	951	952	954	955	959	962	967	968	978	981	982	984	985	986	988	991	992	993	994	995	996	997	1001	1002	1005	1009	1012	1016	1018	1019	1021	1023	1024	1026	1027	1028	1030	1038	1043	1044	1045	1047	1048	1050	1052	1054	1056	1057	1058	1065	1069	1070	1071	1072	1081	1097	1101	1104	1111	1112	1116	1119	1122	1127	1131	1133	1135	1137	1138	1140	1141	1146	1150	1151	1155	1157	1158	1159	1162	1167	1168	1170	1171	1172	1176	1177	1180	1181	1182	1184	
+
+Test set data points (237):
+3	6	12	13	14	15	27	32	34	36	37	40	43	46	55	57	60	66	67	72	74	81	83	87	90	95	100	107	108	125	130	131	139	141	147	150	157	159	160	168	171	179	181	183	184	185	202	205	211	212	221	246	249	250	253	258	263	267	278	284	286	292	293	304	310	313	316	322	340	342	358	359	360	363	366	369	375	376	378	379	393	402	404	411	425	431	435	440	442	443	450	460	462	465	471	473	475	481	487	488	497	509	510	517	518	519	526	527	529	532	542	552	553	554	555	556	558	572	573	577	584	587	590	591	595	603	605	607	608	613	616	617	621	633	634	637	638	639	645	656	663	675	681	690	693	701	703	704	711	714	721	728	729	730	735	738	741	742	746	747	755	762	764	768	774	786	790	792	799	800	804	807	818	829	839	850	862	863	871	873	875	878	880	886	889	900	901	905	914	919	921	927	945	947	953	957	958	987	990	998	1003	1008	1025	1032	1034	1039	1046	1055	1061	1062	1073	1074	1079	1080	1085	1087	1089	1090	1091	1093	1094	1096	1102	1103	1105	1106	1109	1113	1121	1129	1130	1143	1148	1149	1152	1156	1185	
+
+# ================================================================================
+HIGHLY CORRELATED INPUTS: 10/11/2023  9:46:11 下午
+
+Sort descriptors by TLA : 10/11/2023  9:46:11 下午
+
+	Name	Index	Sensitivity
+	EEM_XFh	238	0.493
+	AP_FWeight	0	0.2994
+	NPA_MinQ	224	0.299
+	M_POL	166	0.2969
+	F_NLP	293	0.2177
+	N_FrRotB	19	0.2153
+	Wiener	42	0.1981
+	N_IoAcAt	285	0.1966
+	T_Grav3	198	0.1955
+	EEM_XFon	236	0.1905
+	N_Kekule	34	0.1873
+	IHB	200	0.1829
+	EEM_F6	250	0.1719
+	FormalQ	199	0.1652
+	Pi_FPl2	268	0.1616
+	SaaNH	67	0.1565
+	F_HBP	294	0.1559
+	HBAnch	214	0.1555
+	SHdNH	91	0.1546
+	Pi_AFPlc	263	0.1504
+	Pi_AQn	253	0.1443
+	EEM_F4	248	0.1433
+	SddssS	80	0.1353
+	SecAmine_>NH	107	0.1347
+	SsssCH	48	0.134
+	Ether___-O-	103	0.1339
+	Kappa3	41	0.1298
+	AlHdrxl_-OH	100	0.1297
+	T_RDmtr	43	0.1292
+	H_Phenol	178	0.1142
+	Herndon	35	0.1137
+	N_AOXSites	27	0.1089
+	Pi_AQo	252	0.1059
+	SHsNH2	92	0.1059
+	H_ArAcid	177	0.1053
+	F_SgleB	20	0.1052
+	ArCbxyl_-COOH	150	0.1037
+	N_Sulfur	10	0.1025
+	Pi_FMi2	274	0.1023
+	SdO	76	0.1016
+	Pi_FPl4	270	0.1008
+	EEM_AFon	231	0.1003
+	F_DbleB	21	0.0986
+	Nitrile_C#N	112	0.0973
+	Pi_FMi3	275	0.0973
+	Sulfonmd_-SO2-N<	136	0.0966
+	EEM_NFc	240	0.0951
+	N_IsolLP	33	0.0939
+	T_Rada	189	0.0933
+	Thioamd_C(=S)N<	153	0.0928
+	T_Rads	192	0.0905
+	N_AlipR	31	0.0899
+	T_Radmax	188	0.0877
+	N_IoBaAt	286	0.0872
+	SPhspatN_S=PN(n)O(3-n)<<<	147	0.0868
+	SdssC	52	0.0865
+	Pi_AFMic	264	0.0864
+	Pi_MaxFPl	265	0.0855
+	T_HydroR	193	0.0843
+	QuaAmine_>[N+]<	109	0.0814
+	SaaO	77	0.0806
+	ArHdrxl_-OH	101	0.08
+	M_HB	165	0.08
+	T_MIRxx	194	0.0776
+	ABSQon	216	0.0772
+	Guandne_>NC(=N-)N<	158	0.0771
+	M_RNG	168	0.0761
+	Pi_FPl6	272	0.0741
+	SssCH2	47	0.0732
+	EqualEta	280	0.072
+	Phspate_O=PO3<-	142	0.0707
+	Amidine_C(=N-)N<	154	0.0701
+	EEM_XFpl	241	0.0698
+	Sulfide_-S-	115	0.0691
+	F_AromB	23	0.0685
+	Pi_MaxFMi	266	0.0682
+	HBDnch	213	0.0665
+	StsC	58	0.0664
+	M_QN	169	0.0662
+	Carbonyl_C=O	102	0.0639
+	SHtCH	99	0.0628
+	SaasN	68	0.0622
+	NPA_Q3	227	0.0622
+	SHaaCH	98	0.0621
+	SdNH	63	0.0617
+	Pi_Q1	257	0.0611
+	HBAoch	212	0.0608
+	TerAmine_>N-	108	0.0586
+	SdS	84	0.058
+	T_PSA	197	0.0575
+	SssO	74	0.0569
+	PhspatN_O=PN(n)O(3-n)<<<	146	0.0565
+	H_Azo	180	0.0565
+	T_Radc	191	0.0557
+	H_AmAcid	185	0.0543
+	HBDoch	211	0.0537
+	T_Dipole	196	0.0535
+	EEM_F5	249	0.0534
+	HBAn	208	0.0532
+	NPA_Q2	226	0.0529
+	SaasC	54	0.0526
+	PolarizM	284	0.0515
+	SsssN	62	0.0501
+	Pi_FPl5	271	0.0501
+	Pi_FPl1	267	0.0497
+	NPA_Q5	229	0.0492
+	EEM_MaxF	235	0.0491
+	H_AlAcid	176	0.0487
+	SaaN	66	0.0486
+	N_Rings	29	0.0481
+	MaxQ	217	0.0474
+	Carbmte_>NC(=O)O<	157	0.0469
+	MinQ	218	0.0469
+	M_AMP	167	0.0468
+	Steroid	175	0.0466
+	SsF	86	0.0463
+	SsCl	87	0.0462
+	M_NO2	170	0.0459
+	FZwitter	290	0.0457
+	SaaaC	56	0.0453
+	HBDn	207	0.0444
+	X2	38	0.0442
+	SaaS	85	0.0442
+	Urea____>NC(=O)N<	156	0.0439
+	SaaaN	70	0.0438
+	QAvgNeg	291	0.0428
+	Pi_FPl3	269	0.0428
+	SsO-	75	0.0421
+	EEM_NFnp	244	0.0405
+	Sulfoxde_>S=O	126	0.0388
+	EEM_NFpl	242	0.0379
+	H_Nitro	182	0.0374
+	M_UB	164	0.0372
+	F_AFRBWF	24	0.0371
+	EEM_XFnp	243	0.036
+	EEM_F3	247	0.0356
+	ArNitrog_=N-	110	0.0341
+	ABSQ	215	0.033
+	SsI	89	0.033
+	StN	71	0.0327
+	SssS	82	0.0311
+	Pi_Q3	259	0.0309
+	Oxime___=N-O-	118	0.0303
+	N_AromR	30	0.0299
+	NPA_AQon	220	0.0295
+	EEM_AFpl	233	0.0285
+	EEM_AFnp	234	0.0283
+	Triazo__-N-N-N-	131	0.0272
+	SsCH3	46	0.0272
+	SsBr	88	0.027
+	N_Electr	282	0.0269
+	NPA_Q4	228	0.0247
+	Hdrzine_>N-N<	121	0.0245
+	SaadC	55	0.0242
+	SPhspatS_S=PS(k)O(3-k)<-	145	0.024
+	H_Nitrle	181	0.0239
+	Sulfamid_>NSO2N<	140	0.0238
+	N_CYPSites	26	0.0235
+	SHdCH2	96	0.0233
+	PriSlfmd_-SO2-NH2	137	0.0229
+	VMcGowan	3	0.0229
+	N_Ntrgen	7	0.0224
+	SssssN	59	0.0223
+	ThioAmin_>N-S-	124	0.0211
+	NPA_MaxQ	223	0.0211
+	SPhspat_S=PO3<-	144	0.0203
+	N_Pisyms	32	0.0202
+	NPA_AQh	221	0.02
+	H_AlPyri	179	0.0197
+	FUnion	289	0.0194
+	HBAo	206	0.0193
+	SaaCH	53	0.0178
+	Sulfone_>S(=O)=O	130	0.0174
+	EEM_NFon	237	0.0172
+	Kappa1	39	0.017
+	Amide___C(=O)N<	152	0.0169
+	SHssNH	93	0.0168
+	HBA	204	0.0167
+	NPA_Q6	230	0.0167
+	N_CYPAtoms	25	0.0151
+	FAnion	287	0.015
+	Disulfde_-S-S-	125	0.015
+	Pi_MinQ	256	0.0144
+	EEM_F2	246	0.0143
+	X1	37	0.014
+	AlCbxyl_-COOH	149	0.013
+	SssNH	61	0.0128
+	QAvgPos	292	0.0126
+	Pi_MaxQ	255	0.0126
+	SHdsCH	97	0.0125
+	HydxlAmn_>N-O-	117	0.0123
+	SdsN	64	0.0123
+	Ester___C(=O)OC	151	0.0119
+	Pi_FMi4	276	0.0118
+	NPA_AQc	222	0.0111
+	T_MIRyy	195	0.0104
+	SdsCH	51	0.0102
+	SdssS	83	0.01
+	H_MultiN	184	0.0099
+	SssssC	49	0.0099
+	Blbn_J	44	0.0094
+	NPA_ABSQ	219	0.0092
+	EqualChi	279	0.0091
+	M_PRX	163	0.0081
+	N_Halogen	15	0.0081
+	Elephity	281	0.0079
+	EEM_F1	245	0.0077
+	Pi_Q2	258	0.0077
+	Pi_FMi5	277	0.0074
+	N_Phsphr	9	0.0074
+	PHB	201	0.0072
+	SddsN	69	0.0072
+	HBDch	209	0.007
+	Imide___O=C(N-)C=O	159	0.0065
+	Pi_FMi6	278	0.0063
+	SdsssP	78	0.0061
+	Pi_Q6	262	0.0061
+	Pi_FMi1	273	0.006
+	AlphaAA	172	0.0057
+	NPA_Q1	225	0.0055
+	PriAmAli_-NH2	105	0.0047
+	Hdrzone_=N-N<	122	0.0041
+	Pi_AQc	254	0.0039
+	N_UGTSites	28	0.0032
+	Pi_Q4	260	0.0029
+	M_CX	161	0.0026
+	Imine___=N-	111	0.0025
+	PriAmAro_-NH2	106	0.0019
+	T_Radb	190	0.0019
+	M_NO	162	0.0017
+	Pi_Q5	261	0.0016
+	F_TpleB	22	0.0014
+	Sulfonat_-SO3-	135	0.0013
+	SHCH_321	95	0.0009
+	PriAmine_-NH2	104	0.0008
+	Kappa2	40	0.0007
+	HBD	202	0.0006
+	Pi_ABSQ	251	0.0005
+	EEM_XFc	239	0.0002
+
+48 inputs are highly correlated with others
+	T_Rads                                          correlates with:	NPA_MinQ	F_NLP	N_FrRotB	Wiener	T_Grav3	N_Kekule	EEM_F6	F_HBP	EEM_F4	SddssS	SsssCH	Kappa3	AlHdrxl_-OH	T_RDmtr	Herndon	Pi_AQo	SHsNH2	SdO	EEM_AFon	F_DbleB	T_Rada
+	F_AromB                                         correlates with:	Pi_AQo	F_SgleB	SdO	F_DbleB	Nitrile_C#N	EqualEta
+	T_PSA                                           correlates with:	EEM_XFh	F_NLP	N_IoAcAt	T_Grav3	EEM_XFon	FormalQ	Pi_FPl2	SaaNH	F_HBP	HBAnch	Pi_AFPlc	Pi_AQn	SddssS	Ether___-O-	AlHdrxl_-OH	Herndon	Pi_AQo	SHsNH2	F_SgleB	SdO	EEM_AFon	Nitrile_C#N	Sulfonmd_-SO2-N<	N_IoBaAt	Pi_AFMic	SaaO	ArHdrxl_-OH	ABSQon	EqualEta	HBDnch	StsC	Carbonyl_C=O	SHaaCH	SdNH	Pi_Q1	HBAoch	TerAmine_>N-	SdS
+	HBDoch                                          correlates with:	EEM_XFh	NPA_MinQ	M_POL	F_NLP	Wiener	N_IoAcAt	T_Grav3	IHB	SaaNH	F_HBP	HBAnch	SHdNH	Pi_AFPlc	Pi_AQn	SddssS	SecAmine_>NH	SsssCH	Ether___-O-	AlHdrxl_-OH	H_Phenol	Herndon	Pi_AQo	SHsNH2	ArCbxyl_-COOH	N_Sulfur	Pi_FMi2	SdO	EEM_AFon	F_DbleB	N_IsolLP	Thioamd_C(=S)N<	N_AlipR	T_Radmax	N_IoBaAt	Pi_AFMic	QuaAmine_>[N+]<	SaaO	ArHdrxl_-OH	M_HB	ABSQon	SssCH2	EqualEta	Phspate_O=PO3<-	Sulfide_-S-	HBDnch	M_QN	SdNH	Pi_Q1	HBAoch	TerAmine_>N-	SdS	SssO	H_AmAcid
+	HBAn                                            correlates with:	NPA_MinQ	Wiener	N_IoAcAt	T_Grav3	N_Kekule	IHB	SaaNH	HBAnch	Pi_AQn	EEM_F4	SecAmine_>NH	Ether___-O-	AlHdrxl_-OH	Herndon	Pi_AQo	SHsNH2	SdO	EEM_AFon	F_DbleB	Nitrile_C#N	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	SPhspatN_S=PN(n)O(3-n)<<<	SdssC	Pi_AFMic	T_HydroR	SaaO	ArHdrxl_-OH	ABSQon	Guandne_>NC(=N-)N<	EqualEta	Amidine_C(=N-)N<	EEM_XFpl	HBDnch	M_QN	Carbonyl_C=O	SaasN	SHaaCH	Pi_Q1	HBAoch	SdS	SssO	PhspatN_O=PN(n)O(3-n)<<<	H_Azo	T_Dipole
+	PolarizM                                        correlates with:	AP_FWeight	M_POL	F_NLP	Wiener	T_Grav3	N_Kekule	EEM_F6	HBAnch	SHdNH	Pi_AFPlc	EEM_F4	Kappa3	AlHdrxl_-OH	T_RDmtr	Herndon	Pi_AQo	F_SgleB	N_Sulfur	SdO	Pi_FPl4	Pi_FMi3	EEM_NFc	N_IsolLP	T_Rada	N_IoBaAt	T_HydroR	SssCH2	EqualEta	SaasN	SHaaCH	HBAoch	SdS	EEM_F5	NPA_Q2	SaasC
+	N_Rings                                         correlates with:	N_FrRotB	Wiener	N_IoAcAt	T_Grav3	N_Kekule	EEM_F6	Pi_FPl2	SaaNH	F_HBP	HBAnch	SHdNH	Pi_AFPlc	Pi_AQn	EEM_F4	Ether___-O-	AlHdrxl_-OH	T_RDmtr	Herndon	F_SgleB	ArCbxyl_-COOH	N_Sulfur	Pi_FMi2	Pi_FPl4	EEM_AFon	F_DbleB	Pi_FMi3	T_Rada	N_AlipR	T_Radmax	SdssC	Pi_AFMic	QuaAmine_>[N+]<	SaaO	ABSQon	M_RNG	StsC	M_QN	SaasN	SHaaCH	SsssN	Pi_FPl5	Pi_FPl1	SaaN
+	HBDn                                            correlates with:	N_IoAcAt	F_HBP	HBAnch	SecAmine_>NH	SHsNH2	EEM_AFon	N_IoBaAt	ABSQon	HBDnch	SdNH	TerAmine_>N-	SssO	SsssN
+	X2                                              correlates with:	AP_FWeight	M_POL	F_NLP	N_FrRotB	Wiener	T_Grav3	IHB	EEM_F6	SHdNH	Pi_AFPlc	EEM_F4	SddssS	Kappa3	AlHdrxl_-OH	T_RDmtr	SHsNH2	F_SgleB	SdO	Pi_FPl4	EEM_AFon	F_DbleB	EEM_NFc	N_IsolLP	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	T_HydroR	SaaO	ArHdrxl_-OH	M_HB	T_MIRxx	ABSQon	SssCH2	EqualEta	HBDnch	M_QN	NPA_Q3	SHaaCH	HBAoch	SssO	NPA_Q2	SaasC	Pi_FPl1	SsF	SsCl	SaaaC
+	SsO-                                            correlates with:	EEM_XFh	NPA_MinQ	M_POL	N_FrRotB	Wiener	N_IoAcAt	EEM_XFon	N_Kekule	SaaNH	HBAnch	Pi_AFPlc	EEM_F4	SddssS	Kappa3	AlHdrxl_-OH	Herndon	SHsNH2	F_SgleB	ArCbxyl_-COOH	N_Sulfur	SdO	Pi_FPl4	EEM_AFon	EEM_NFc	T_Rada	Thioamd_C(=S)N<	N_AlipR	T_Radmax	Pi_AFMic	T_HydroR	SaaO	ArHdrxl_-OH	EqualEta	EEM_XFpl	Sulfide_-S-	StsC	SaasN	NPA_Q3	SHaaCH	HBAoch	SdS	SssO	PhspatN_O=PN(n)O(3-n)<<<	T_Radc	H_AmAcid	EEM_F5	NPA_Q2	SaasC	SsssN	Pi_FPl1	EEM_MaxF	H_AlAcid	M_AMP	SsF	SsCl	M_NO2	QAvgNeg	Pi_FPl3
+	M_UB                                            correlates with:	NPA_MinQ	F_NLP	N_FrRotB	N_IoAcAt	HBAnch	SHdNH	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	SecAmine_>NH	Ether___-O-	AlHdrxl_-OH	Herndon	Pi_AQo	F_SgleB	N_Sulfur	Pi_FMi2	SdO	Pi_FPl4	EEM_AFon	F_DbleB	Nitrile_C#N	Sulfonmd_-SO2-N<	EEM_NFc	N_IsolLP	T_Rada	Thioamd_C(=S)N<	N_AlipR	T_Radmax	N_IoBaAt	SdssC	Pi_AFMic	T_HydroR	SaaO	T_MIRxx	ABSQon	M_RNG	Pi_FPl6	SssCH2	EqualEta	HBDnch	SaasN	SHaaCH	HBAoch	SdS	SssO	PhspatN_O=PN(n)O(3-n)<<<	T_Radc	SsssN	Pi_FPl5	Pi_FPl1	SaaN	SsF	SsCl	M_NO2	SaaaC	SaaS	SaaaN
+	EEM_F3                                          correlates with:	EEM_XFh	N_FrRotB	Wiener	T_Grav3	N_Kekule	IHB	EEM_F6	HBAnch	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	SsssCH	Kappa3	AlHdrxl_-OH	T_RDmtr	SHsNH2	Pi_FMi2	SdO	Pi_FPl4	F_DbleB	N_IsolLP	T_Rada	N_AlipR	N_IoBaAt	Pi_AFMic	T_HydroR	ArHdrxl_-OH	M_HB	T_MIRxx	ABSQon	EqualEta	HBDnch	M_QN	NPA_Q3	SHaaCH	HBAoch	SssO	NPA_Q2	SsssN	Pi_FPl5	SaaN	Steroid	SsCl	SaaaC	QAvgNeg	EEM_NFnp	Sulfoxde_>S=O	EEM_NFpl	EEM_XFnp
+	ABSQ                                            correlates with:	AP_FWeight	M_POL	N_FrRotB	N_IoAcAt	IHB	EEM_F6	FormalQ	SaaNH	SHdNH	Pi_AFPlc	Pi_AQn	EEM_F4	SsssCH	AlHdrxl_-OH	T_RDmtr	N_AOXSites	Pi_AQo	SHsNH2	N_Sulfur	Pi_FMi2	SdO	EEM_AFon	N_IsolLP	T_Rada	Thioamd_C(=S)N<	N_AlipR	T_Radmax	N_IoBaAt	T_HydroR	ArHdrxl_-OH	ABSQon	EqualEta	Sulfide_-S-	HBDnch	M_QN	NPA_Q3	SHaaCH	Pi_Q1	HBAoch	EEM_F5	NPA_Q2	MinQ	SsF	M_NO2	ArNitrog_=N-
+	N_AromR                                         correlates with:	NPA_MinQ	M_POL	F_NLP	N_FrRotB	Wiener	IHB	FormalQ	Pi_FPl2	SaaNH	HBAnch	SHdNH	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	Ether___-O-	T_RDmtr	Herndon	Pi_AQo	SHsNH2	F_SgleB	N_Sulfur	Pi_FPl4	EEM_AFon	F_DbleB	Nitrile_C#N	EEM_NFc	N_AlipR	Pi_AFMic	SaaO	ABSQon	M_RNG	HBDnch	M_QN	SaasN	SHaaCH	HBAoch	SssO	SaasC	Pi_FPl5	SaaN	SaaaC	SaaS	SaaaN	Pi_FPl3	ArNitrog_=N-	StN	SssS
+	NPA_AQon                                        correlates with:	Pi_FPl2	SaaNH	HBAnch	SHdNH	Pi_AQn	Ether___-O-	Herndon	Pi_AQo	F_SgleB	Pi_FPl4	EEM_AFon	N_IsolLP	T_HydroR	ABSQon	M_QN	SaasN	SHaaCH	Pi_Q1	HBAoch	SaaN	SsF	M_NO2	Pi_FPl3	ArNitrog_=N-
+	EEM_AFnp                                        correlates with:	F_NLP	N_FrRotB	Wiener	EEM_F6	Pi_FPl2	SHdNH	EEM_F4	Ether___-O-	AlHdrxl_-OH	T_RDmtr	Herndon	F_SgleB	SdO	EEM_AFon	T_Rada	T_HydroR	SaaO	T_MIRxx	EqualEta	HBDnch	SHaaCH	HBAoch	SssO	EEM_F5	SaasC	Pi_FPl1	SsF	M_NO2	EEM_XFnp	EEM_AFpl
+	N_Electr                                        correlates with:	F_NLP	N_FrRotB	Wiener	T_Grav3	EEM_F6	Pi_AFPlc	EEM_F4	AlHdrxl_-OH	Herndon	Pi_AQo	SHsNH2	F_SgleB	N_Sulfur	SdO	N_IsolLP	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	T_HydroR	ArHdrxl_-OH	SssCH2	EqualEta	SHaaCH	HBAoch	EEM_F5	SsF	SsCl	SsI	EEM_AFpl	SsCH3	SsBr
+	N_CYPSites                                      correlates with:	F_NLP	N_FrRotB	Wiener	N_IoAcAt	T_Grav3	EEM_F6	HBAnch	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	SsssCH	Ether___-O-	Kappa3	AlHdrxl_-OH	T_RDmtr	Herndon	Pi_AQo	SdO	EEM_AFon	F_DbleB	N_IsolLP	T_Rada	Thioamd_C(=S)N<	N_AlipR	N_IoBaAt	SdssC	Pi_AFMic	T_HydroR	ABSQon	SssCH2	EqualEta	NPA_Q3	SHaaCH	HBAoch	EEM_F5	NPA_Q2	Pi_FPl5	EEM_MaxF	SsF	SsCl	M_NO2	SaaaC	EEM_NFnp	ArNitrog_=N-	SsI	StN	EEM_AFpl	SsCH3	SsBr	NPA_Q4
+	VMcGowan                                        correlates with:	F_NLP	N_FrRotB	Wiener	EEM_F6	Pi_FPl2	SHdNH	Pi_AFPlc	EEM_F4	SddssS	Herndon	Pi_AQo	SHsNH2	F_SgleB	N_Sulfur	EEM_AFon	N_IsolLP	T_Rada	N_AlipR	T_HydroR	T_MIRxx	ABSQon	SssCH2	EqualEta	HBDnch	NPA_Q3	SHaaCH	HBAoch	SssO	EEM_F5	NPA_Q2	Pi_FPl1	SaaN	SsF	SsCl	EEM_NFnp	ArNitrog_=N-	SsI	EEM_AFpl	SsCH3	NPA_Q4
+	N_Ntrgen                                        correlates with:	F_NLP	N_IoAcAt	EEM_XFon	Pi_FPl2	SaaNH	HBAnch	Pi_AFPlc	Pi_AQn	SddssS	SecAmine_>NH	N_AOXSites	Pi_AQo	SHsNH2	F_SgleB	SdO	EEM_AFon	Sulfonmd_-SO2-N<	N_IsolLP	Thioamd_C(=S)N<	T_Radmax	N_IoBaAt	Pi_AFMic	ArHdrxl_-OH	ABSQon	M_RNG	SssCH2	HBDnch	M_QN	Carbonyl_C=O	SaasN	NPA_Q3	SHaaCH	Pi_Q1	HBAoch	TerAmine_>N-	SdS	H_Azo	T_Dipole	NPA_Q2	SaasC	SsssN	Pi_FPl1	NPA_Q5	SaaN	MinQ	SsF	SsCl	M_NO2	EEM_NFnp	ArNitrog_=N-	StN	EEM_AFpl	NPA_Q4	SaadC
+	NPA_AQh                                         correlates with:	F_NLP	N_FrRotB	Wiener	EEM_F6	Pi_FPl2	SHdNH	Pi_AQn	EEM_F4	SddssS	Kappa3	AlHdrxl_-OH	Pi_AQo	SHsNH2	F_SgleB	N_Sulfur	SdO	EEM_AFon	N_IsolLP	T_Rada	N_AlipR	Pi_AFMic	T_HydroR	ArHdrxl_-OH	T_MIRxx	ABSQon	SssCH2	EqualEta	HBDnch	M_QN	Carbonyl_C=O	NPA_Q3	SHaaCH	HBAoch	SssO	EEM_F5	NPA_Q2	Pi_FPl1	EEM_MaxF	SaaN	SsF	SsCl	M_NO2	ArNitrog_=N-	SsI	StN	EEM_AFpl	SsCH3	SsBr	NPA_Q4	NPA_MaxQ
+	HBAo                                            correlates with:	F_NLP	N_IoAcAt	T_Grav3	HBAnch	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	Ether___-O-	AlHdrxl_-OH	Pi_AQo	SHsNH2	N_Sulfur	SdO	EEM_AFon	N_IsolLP	N_IoBaAt	T_HydroR	SaaO	ArHdrxl_-OH	ABSQon	HBDnch	SHaaCH	HBAoch	SssO	Pi_FPl1	MinQ	SsF	M_NO2	EEM_NFnp	EEM_XFnp	SsCH3
+	SaaCH                                           correlates with:	AP_FWeight	M_POL	F_NLP	Wiener	T_Grav3	N_Kekule	IHB	EEM_F6	FormalQ	F_HBP	HBAnch	Pi_AQn	EEM_F4	SddssS	SsssCH	Ether___-O-	Kappa3	AlHdrxl_-OH	T_RDmtr	N_AOXSites	F_SgleB	ArCbxyl_-COOH	N_Sulfur	SdO	Pi_FPl4	EEM_AFon	Pi_FMi3	Sulfonmd_-SO2-N<	EEM_NFc	N_IsolLP	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	Pi_MaxFPl	ArHdrxl_-OH	ABSQon	SssCH2	Sulfide_-S-	HBDnch	M_QN	NPA_Q3	SHaaCH	HBAoch	TerAmine_>N-	SdS	SssO	EEM_F5	NPA_Q2	SaasC	SsssN	Pi_FPl1	NPA_Q5	SaaN	SsF	SsCl	EEM_NFnp	StN	EEM_AFpl	SsCH3	SsBr	NPA_Q4	SHdCH2	SssssN
+	Kappa1                                          correlates with:	F_NLP	N_FrRotB	Wiener	T_Grav3	EEM_F6	Pi_FPl2	Pi_AFPlc	EEM_F4	Kappa3	AlHdrxl_-OH	Herndon	Pi_AQo	SHsNH2	F_SgleB	N_Sulfur	SdO	EEM_AFon	F_DbleB	N_IsolLP	T_Rada	N_AlipR	N_IoBaAt	T_HydroR	ArHdrxl_-OH	SssCH2	EqualEta	HBDnch	NPA_Q3	SHaaCH	HBAoch	SssO	EEM_F5	NPA_Q2	SsF	SsCl	StN	EEM_AFpl	SsCH3	NPA_Q4	NPA_MaxQ	N_Pisyms
+	SHssNH                                          correlates with:	N_IoAcAt	T_Grav3	N_Kekule	SaaNH	F_HBP	SHdNH	Pi_AFPlc	T_RDmtr	Pi_AQo	SHsNH2	Pi_FMi2	EEM_AFon	F_DbleB	N_IoBaAt	Pi_AFMic	T_HydroR	ArHdrxl_-OH	M_HB	EqualEta	EEM_XFpl	HBDnch	NPA_Q3	SdNH	HBAoch	TerAmine_>N-	SdS	SssO	T_Radc	EEM_F5	SsssN	EEM_MaxF	SaaN	SsF	QAvgNeg	EEM_XFnp	ArNitrog_=N-	Pi_Q3	EEM_AFpl	NPA_Q4	Hdrzine_>N-N<
+	HBA                                             correlates with:	F_NLP	N_IoAcAt	T_Grav3	N_Kekule	Pi_FPl2	SaaNH	HBAnch	SHdNH	Pi_AQn	SddssS	SecAmine_>NH	AlHdrxl_-OH	Pi_AQo	SHsNH2	SdO	Pi_FPl4	EEM_AFon	Nitrile_C#N	N_IsolLP	N_IoBaAt	T_HydroR	SaaO	ArHdrxl_-OH	ABSQon	SssCH2	HBDnch	M_QN	Carbonyl_C=O	SaasN	SHaaCH	HBAoch	TerAmine_>N-	SdS	SssO	H_Azo	T_Dipole	SsssN	Pi_FPl1	SaaN	SsF	SaaaN	Pi_FPl3	EEM_XFnp	StN	Oxime___=N-O-	SsCH3	NPA_Q4	SaadC	SssssN	N_Pisyms
+	N_CYPAtoms                                      correlates with:	NPA_MinQ	M_POL	F_NLP	N_FrRotB	Wiener	N_IoAcAt	T_Grav3	N_Kekule	IHB	EEM_F6	SaaNH	HBAnch	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	SsssCH	Ether___-O-	Kappa3	AlHdrxl_-OH	Pi_AQo	F_SgleB	N_Sulfur	SdO	EEM_AFon	F_DbleB	N_IsolLP	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	SdssC	Pi_AFMic	T_HydroR	T_MIRxx	ABSQon	EqualEta	EEM_XFpl	HBDnch	M_QN	SaasN	NPA_Q3	SHaaCH	HBAoch	EEM_F5	NPA_Q2	SaasC	Pi_FPl5	Pi_FPl1	NPA_Q5	EEM_MaxF	SaaN	SsF	SsCl	EEM_NFnp	SsI	StN	EEM_AFpl	SsBr	NPA_Q4	NPA_MaxQ	NPA_Q6
+	EEM_F2                                          correlates with:	NPA_MinQ	F_NLP	Wiener	N_IoAcAt	EEM_F6	HBAnch	SHdNH	Pi_AQn	EEM_F4	SddssS	Kappa3	T_RDmtr	Herndon	Pi_AQo	SHsNH2	F_SgleB	N_Sulfur	Pi_FMi2	SdO	Nitrile_C#N	Sulfonmd_-SO2-N<	EEM_NFc	N_IsolLP	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	Pi_MaxFPl	T_HydroR	T_MIRxx	ABSQon	SssCH2	EqualEta	EEM_XFpl	HBDnch	M_QN	SHtCH	NPA_Q3	SHaaCH	HBAoch	TerAmine_>N-	SdS	SssO	T_Radc	NPA_Q2	SsssN	EEM_MaxF	SsF	SsCl	SaaaC	Sulfoxde_>S=O	StN	SssS	EEM_AFpl	SsCH3	SsBr	NPA_Q4	SssssN	NPA_MaxQ	EEM_NFon
+	X1                                              correlates with:	F_NLP	N_FrRotB	Wiener	T_Grav3	EEM_F6	Pi_FPl2	Pi_AFPlc	Pi_AQn	EEM_F4	Herndon	Pi_AQo	F_SgleB	N_Sulfur	SdO	Pi_FPl4	EEM_AFon	N_IsolLP	T_Rada	N_AlipR	N_IoBaAt	Pi_AFMic	T_HydroR	SaaO	ArHdrxl_-OH	SssCH2	EqualEta	HBDnch	NPA_Q3	SHaaCH	HBAoch	SssO	EEM_F5	NPA_Q2	Pi_FPl5	NPA_Q5	SaaN	SsF	SaaaC	EEM_AFpl	SsCH3	NPA_Q4	N_Pisyms
+	SssNH                                           correlates with:	EEM_XFh	NPA_MinQ	M_POL	F_NLP	N_FrRotB	N_IoAcAt	FormalQ	Pi_FPl2	SaaNH	F_HBP	HBAnch	SHdNH	Pi_AQn	EEM_F4	SecAmine_>NH	Ether___-O-	AlHdrxl_-OH	Herndon	SHsNH2	F_SgleB	ArCbxyl_-COOH	N_Sulfur	SdO	Pi_FPl4	EEM_AFon	F_DbleB	Nitrile_C#N	Sulfonmd_-SO2-N<	N_IsolLP	N_AlipR	T_Radmax	N_IoBaAt	SdssC	T_HydroR	ABSQon	Guandne_>NC(=N-)N<	Pi_FPl6	SssCH2	EqualEta	Sulfide_-S-	HBDnch	StsC	SaasN	NPA_Q3	SdNH	Pi_Q1	HBAoch	TerAmine_>N-	SdS	SssO	EEM_F5	NPA_Q2	SsssN	Pi_FPl1	NPA_Q5	SaaN	MaxQ	MinQ	Steroid	SsF	M_NO2	Urea____>NC(=O)N<	Pi_FPl3	EEM_NFpl	ArNitrog_=N-	StN	SssS	NPA_Q4	Hdrzine_>N-N<	PriSlfmd_-SO2-NH2	FUnion	Sulfone_>S(=O)=O	EEM_NFon	Amide___C(=O)N<	NPA_Q6	FAnion	Disulfde_-S-S-
+	QAvgPos                                         correlates with:	SdO	N_IoBaAt	ABSQon	SdNH	HBAoch	FUnion	FAnion
+	NPA_AQc                                         correlates with:	AP_FWeight	NPA_MinQ	F_NLP	N_FrRotB	Wiener	N_IoAcAt	EEM_XFon	IHB	EEM_F6	SaaNH	HBAnch	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	SsssCH	Ether___-O-	AlHdrxl_-OH	N_AOXSites	Pi_AQo	SHsNH2	F_SgleB	ArCbxyl_-COOH	N_Sulfur	SdO	Pi_FPl4	EEM_AFon	Nitrile_C#N	EEM_NFc	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	SPhspatN_S=PN(n)O(3-n)<<<	Pi_AFMic	T_HydroR	SaaO	ArHdrxl_-OH	M_HB	T_MIRxx	ABSQon	SssCH2	EEM_XFpl	HBDnch	StsC	Carbonyl_C=O	SaasN	NPA_Q3	SHaaCH	HBAoch	SssO	T_Radc	T_Dipole	NPA_Q2	SsssN	NPA_Q5	EEM_MaxF	SaaN	MinQ	SsF	SsCl	M_NO2	SaaS	QAvgNeg	EEM_NFnp	Sulfoxde_>S=O	EEM_NFpl	ArNitrog_=N-	StN	SssS	EEM_AFpl	SsCH3	SsBr	NPA_Q4	SaadC	SssssN	SPhspat_S=PO3<-	EEM_NFon	NPA_Q6	Pi_MinQ	AlCbxyl_-COOH	Pi_MaxQ	SdsN	Ester___C(=O)OC
+	NPA_ABSQ                                        correlates with:	F_NLP	N_FrRotB	Wiener	T_Grav3	IHB	EEM_F6	HBAnch	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	SsssCH	Ether___-O-	T_RDmtr	N_AOXSites	Pi_AQo	SHsNH2	F_SgleB	SdO	EEM_AFon	Nitrile_C#N	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	Pi_AFMic	T_HydroR	ArHdrxl_-OH	ABSQon	SssCH2	HBDnch	M_QN	NPA_Q3	HBAoch	NPA_Q2	SaasC	SsssN	NPA_Q5	EEM_MaxF	SaaN	SsCl	M_NO2	ArNitrog_=N-	StN	EEM_AFpl	SsCH3	SsBr	NPA_Q4	NPA_Q6	SdsN	Ester___C(=O)OC	SssssC
+	N_Halogen                                       correlates with:	F_NLP	Pi_AQo	F_SgleB	SdO	EEM_AFon	EEM_NFc	N_IsolLP	N_AlipR	HBDnch	SaaN	SsF	SsCl	EEM_NFpl	SsI	StN	SsBr	EEM_NFon	EqualChi
+	Elephity                                        correlates with:	F_NLP	N_FrRotB	Wiener	T_Grav3	EEM_F6	FormalQ	Pi_FPl2	HBAnch	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	AlHdrxl_-OH	Herndon	N_Sulfur	SdO	EEM_AFon	Nitrile_C#N	Sulfonmd_-SO2-N<	N_IsolLP	T_Rada	N_AlipR	N_IoBaAt	Pi_AFMic	T_HydroR	ArHdrxl_-OH	SssCH2	EqualEta	HBDnch	M_QN	SaasN	NPA_Q3	SHaaCH	HBAoch	SssO	EEM_F5	NPA_Q2	SaasC	SaaN	SsF	SsCl	M_NO2	SaaaC	EEM_XFnp	StN	EEM_AFpl	SsCH3	SsBr	N_Pisyms	SssssC	M_PRX
+	EEM_F1                                          correlates with:	N_FrRotB	Wiener	T_Grav3	EEM_F6	SaaNH	HBAnch	SHdNH	EEM_F4	SddssS	SsssCH	Ether___-O-	T_RDmtr	Herndon	N_AOXSites	Pi_AQo	F_SgleB	N_Sulfur	SdO	EEM_AFon	Sulfonmd_-SO2-N<	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	T_HydroR	SaaO	ABSQon	SssCH2	EEM_XFpl	HBDnch	M_QN	SaasN	HBAoch	SssO	T_Dipole	EEM_F5	NPA_Q2	SsssN	EEM_MaxF	SaaN	Carbmte_>NC(=O)O<	SsF	SsCl	EEM_NFnp	EEM_XFnp	StN	EEM_AFpl	SsCH3	NPA_MaxQ	Sulfone_>S(=O)=O	AlCbxyl_-COOH	Pi_MaxQ	SHdsCH	Ester___C(=O)OC	SssssC	M_PRX
+	HBDch                                           correlates with:	N_IoAcAt	T_Grav3	N_Kekule	FormalQ	Pi_FPl2	F_HBP	Pi_AFPlc	SddssS	Ether___-O-	Kappa3	AlHdrxl_-OH	Herndon	Pi_AQo	SHsNH2	ArCbxyl_-COOH	N_Sulfur	SdO	EEM_AFon	F_DbleB	Sulfonmd_-SO2-N<	N_IsolLP	T_Rada	Thioamd_C(=S)N<	T_Radmax	N_IoBaAt	SaaO	ArHdrxl_-OH	ABSQon	EqualEta	EEM_XFpl	Sulfide_-S-	HBDnch	M_QN	HBAoch	SdS	SssO	SsssN	Pi_FPl1	NPA_Q5	EEM_MaxF	SaaN	SsF	SsCl	M_NO2	QAvgNeg	Pi_FPl3	EEM_XFnp	Oxime___=N-O-	SsCH3	NPA_Q4	SPhspatS_S=PS(k)O(3-k)<-	SssssN	Sulfone_>S(=O)=O	AlCbxyl_-COOH	SHdsCH	HydxlAmn_>N-O-	Ester___C(=O)OC	T_MIRyy	SssssC	EqualChi	M_PRX	N_Phsphr
+	SdsssP                                          correlates with:	F_NLP	N_FrRotB	Wiener	T_Grav3	EEM_XFon	EEM_F6	FormalQ	Pi_FPl2	F_HBP	HBAnch	SHdNH	Pi_AQn	EEM_F4	SddssS	Ether___-O-	AlHdrxl_-OH	Herndon	Pi_AQo	SHsNH2	F_SgleB	ArCbxyl_-COOH	N_Sulfur	SdO	EEM_AFon	F_DbleB	Sulfonmd_-SO2-N<	EEM_NFc	T_Rada	Thioamd_C(=S)N<	N_IoBaAt	SdssC	Pi_AFMic	T_HydroR	QuaAmine_>[N+]<	ArHdrxl_-OH	T_MIRxx	ABSQon	SssCH2	Phspate_O=PO3<-	HBDnch	M_QN	NPA_Q3	SHaaCH	HBAoch	TerAmine_>N-	SssO	PhspatN_O=PN(n)O(3-n)<<<	EEM_F5	NPA_Q2	SsssN	Pi_FPl1	NPA_Q5	SaaN	MaxQ	Carbmte_>NC(=O)O<	SsCl	M_NO2	Urea____>NC(=O)N<	Pi_FPl3	EEM_NFnp	Sulfoxde_>S=O	EEM_XFnp	Oxime___=N-O-	EEM_AFpl	SsCH3	NPA_Q4	SPhspatS_S=PS(k)O(3-k)<-	SssssN	NPA_MaxQ	SPhspat_S=PO3<-	Sulfone_>S(=O)=O	Amide___C(=O)N<	Pi_MinQ	AlCbxyl_-COOH	HydxlAmn_>N-O-	Ester___C(=O)OC	SdsCH	N_Phsphr
+	NPA_Q1                                          correlates with:	N_FrRotB	T_Grav3	EEM_F6	FormalQ	SaaNH	HBAnch	SddssS	Ether___-O-	AlHdrxl_-OH	Pi_AQo	ArCbxyl_-COOH	N_Sulfur	Pi_FPl4	Sulfonmd_-SO2-N<	N_IoBaAt	ArHdrxl_-OH	EEM_XFpl	Sulfide_-S-	HBDnch	NPA_Q3	HBAoch	SssO	EEM_F5	NPA_Q2	NPA_Q5	EEM_MaxF	SaaN	Carbmte_>NC(=O)O<	SsF	SsCl	M_NO2	EEM_XFnp	ArNitrog_=N-	Oxime___=N-O-	EEM_AFpl	NPA_Q4	Sulfamid_>NSO2N<	NPA_MaxQ	NPA_Q6	AlCbxyl_-COOH	Ester___C(=O)OC	M_PRX	N_Phsphr
+	N_UGTSites                                      correlates with:	EEM_XFh	F_NLP	N_FrRotB	Wiener	N_IoAcAt	T_Grav3	HBAnch	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	SecAmine_>NH	Ether___-O-	Kappa3	AlHdrxl_-OH	SHsNH2	ArCbxyl_-COOH	N_Sulfur	Pi_FMi2	SdO	Pi_FPl4	EEM_AFon	Nitrile_C#N	Sulfonmd_-SO2-N<	EEM_NFc	N_IsolLP	T_Rada	Thioamd_C(=S)N<	N_IoBaAt	Pi_AFMic	SaaO	ArHdrxl_-OH	ABSQon	EqualEta	Amidine_C(=N-)N<	Sulfide_-S-	HBDnch	StsC	M_QN	Carbonyl_C=O	NPA_Q3	SHaaCH	HBAoch	TerAmine_>N-	SdS	SssO	T_Radc	EEM_F5	NPA_Q2	SaasC	SsssN	Pi_FPl1	NPA_Q5	EEM_MaxF	SaaN	SsF	SsCl	M_NO2	QAvgNeg	EEM_NFnp	StN	NPA_Q4	PriSlfmd_-SO2-NH2	SssssN	N_Pisyms	Amide___C(=O)N<	Disulfde_-S-S-	AlCbxyl_-COOH	SdsN	SdsCH	SssssC	EqualChi	M_PRX	N_Phsphr	SddsN
+	M_CX                                            correlates with:	F_NLP	N_FrRotB	Wiener	EEM_F6	Pi_FPl2	HBAnch	SHdNH	Pi_AFPlc	EEM_F4	SddssS	AlHdrxl_-OH	T_RDmtr	Herndon	SHsNH2	N_Sulfur	SdO	EEM_NFc	T_Rada	N_AlipR	Pi_AFMic	T_HydroR	SaaO	ArHdrxl_-OH	SssCH2	EqualEta	HBDnch	NPA_Q3	SHaaCH	HBAoch	EEM_F5	NPA_Q2	SaasC	SsssN	Pi_FPl5	SsF	SsCl	M_NO2	SaaaC	EEM_NFnp	SsI	SsCH3	SsBr	NPA_Q4	SssssC	EqualChi	M_PRX	Pi_Q2	Pi_AQc
+	T_Radb                                          correlates with:	T_RDmtr	Pi_AQo	T_Rada	N_IoBaAt	T_HydroR	T_MIRxx	SssCH2	EqualEta	SHaaCH	HBAoch	T_Radc	SsF	T_MIRyy
+	M_NO                                            correlates with:	N_Kekule	SaaNH	HBAnch	SHdNH	Pi_AQn	EEM_F4	SecAmine_>NH	Ether___-O-	AlHdrxl_-OH	Pi_AQo	N_Sulfur	SdO	EEM_AFon	Sulfonmd_-SO2-N<	N_IsolLP	N_AlipR	T_Radmax	N_IoBaAt	ArHdrxl_-OH	ABSQon	SssCH2	HBDnch	M_QN	SaasN	NPA_Q3	SHaaCH	SdNH	HBAoch	TerAmine_>N-	SssO	NPA_Q2	SaasC	SsssN	Pi_FPl1	NPA_Q5	SaaN	SsF	SsCl	M_NO2	StN	SssS	Oxime___=N-O-	EEM_AFpl	SsBr	NPA_Q4	SssssN	N_Pisyms	HydxlAmn_>N-O-	SdsN	EqualChi	M_PRX	Pi_AQc
+	SHCH_321                                        correlates with:	NPA_MinQ	F_NLP	N_FrRotB	Wiener	T_Grav3	EEM_F6	SaaNH	HBAnch	SHdNH	Pi_AFPlc	Pi_AQn	EEM_F4	SsssCH	Ether___-O-	Kappa3	T_RDmtr	Herndon	Pi_AQo	ArCbxyl_-COOH	N_Sulfur	SdO	EEM_AFon	Nitrile_C#N	Sulfonmd_-SO2-N<	N_IsolLP	N_AlipR	N_IoBaAt	Pi_AFMic	T_HydroR	SaaO	ArHdrxl_-OH	T_MIRxx	ABSQon	SssCH2	EqualEta	Sulfide_-S-	HBDnch	SaasN	NPA_Q3	SHaaCH	SssO	T_Radc	EEM_F5	NPA_Q2	SaasC	SsssN	Pi_FPl1	NPA_Q5	EEM_MaxF	MaxQ	SsCl	M_NO2	QAvgNeg	EEM_NFnp	Sulfoxde_>S=O	EEM_AFpl	SsCH3	NPA_Q4	SHdCH2	NPA_MaxQ	N_Pisyms	Sulfone_>S(=O)=O	NPA_Q6	FAnion	Pi_MinQ	Pi_MaxQ	SHdsCH	Ester___C(=O)OC	Pi_FMi4	SdsCH	SdssS	SssssC	EqualChi	M_PRX	Pi_Q2	N_Phsphr	SddsN	Pi_FMi1	Sulfonat_-SO3-
+	PriAmine_-NH2                                   correlates with:	PriAmAli_-NH2	PriAmAro_-NH2
+	Kappa2                                          correlates with:	F_NLP	N_FrRotB	Wiener	T_Grav3	IHB	EEM_F6	Pi_FPl2	SaaNH	HBAnch	SHdNH	Pi_AFPlc	Pi_AQn	EEM_F4	SddssS	Ether___-O-	Kappa3	T_RDmtr	N_AOXSites	Pi_AQo	F_SgleB	N_Sulfur	Pi_FMi2	SdO	F_DbleB	EEM_NFc	N_IsolLP	T_Rada	N_AlipR	T_Radmax	N_IoBaAt	T_HydroR	ABSQon	Pi_FPl6	SssCH2	EqualEta	M_QN	SaasN	NPA_Q3	Pi_Q1	HBAoch	SssO	EEM_F5	NPA_Q2	EEM_MaxF	Carbmte_>NC(=O)O<	SsF	SaaaC	Pi_FPl3	F_AFRBWF	SsCH3	NPA_Q4	SPhspatS_S=PS(k)O(3-k)<-	SssssN	NPA_MaxQ	N_Pisyms	FAnion	Ester___C(=O)OC	T_MIRyy	SssssC	Blbn_J	Pi_Q2	Pi_FMi5	N_Phsphr	PriAmAro_-NH2	F_TpleB
+	HBD                                             correlates with:	N_IoAcAt	T_Grav3	N_Kekule	FormalQ	Pi_FPl2	F_HBP	HBAnch	Pi_AQn	SddssS	SecAmine_>NH	Ether___-O-	Kappa3	AlHdrxl_-OH	Herndon	Pi_AQo	SHsNH2	ArCbxyl_-COOH	N_Sulfur	SdO	Pi_FPl4	EEM_AFon	F_DbleB	Sulfonmd_-SO2-N<	EEM_NFc	N_IsolLP	T_Rada	Thioamd_C(=S)N<	T_Radmax	N_IoBaAt	T_HydroR	SaaO	ArHdrxl_-OH	ABSQon	EqualEta	EEM_XFpl	Sulfide_-S-	HBDnch	M_QN	Carbonyl_C=O	NPA_Q3	SdNH	HBAoch	SdS	SssO	SsssN	Pi_FPl1	EEM_MaxF	SaaN	SsF	SsCl	M_NO2	QAvgNeg	Pi_FPl3	EEM_NFnp	Sulfoxde_>S=O	EEM_XFnp	SssS	Oxime___=N-O-	EEM_AFpl	SsBr	SPhspatS_S=PS(k)O(3-k)<-	SssssN	Sulfone_>S(=O)=O	Amide___C(=O)N<	AlCbxyl_-COOH	SHdsCH	HydxlAmn_>N-O-	SdsN	T_MIRyy	SssssC	M_PRX	N_Phsphr	SddsN	Pi_AQc	PriAmAro_-NH2
+	Pi_ABSQ                                         correlates with:	HBAnch	Pi_AQn	SddssS	Ether___-O-	Herndon	Pi_AQo	N_Sulfur	SdO	N_IsolLP	Thioamd_C(=S)N<	N_IoBaAt	NPA_Q3	SHaaCH	Pi_Q1	HBAoch	SdS	SsF	SsCl	StN	SssS	Pi_Q3	NPA_Q4	Pi_Q2	Pi_AQc	Pi_Q4
+
+# ================================================================================
+
+
+ADMET Modeler(TM) 10.3.0.0 Kohonen map file = C:\Users\Administrator\AppData\Local\Simulations Plus, Inc\ADMET_Modeler10.3\Temp\\oxfvuwmbul-28804-2023101121\Response_2023-10-11_04 0.889.som
+
+Maximum number of inputs = 191
+# ================================================================================
+
+
+SENSITIVITY BY ITERATIVE TRUNCATED LINEAR ANALYSIS : 10/11/2023  9:46:11 下午
+
+Index	Descriptor	Sensitivity	Relative Sensitivity
+1	FAnion	191.000	1.000
+2	Wiener	190.000	0.995
+3	FUnion	189.000	0.990
+4	Nitrile_C#N	188.000	0.984
+5	H_Nitrle	187.000	0.979
+6	EEM_XFh	186.000	0.974
+7	M_POL	185.000	0.969
+8	H_Phenol	184.000	0.963
+9	EEM_AFpl	183.000	0.958
+10	F_SgleB	182.000	0.953
+11	N_Kekule	181.000	0.948
+12	Pi_MinQ	180.000	0.942
+13	HBDnch	179.000	0.937
+14	N_IoBaAt	178.000	0.932
+15	NPA_MinQ	177.000	0.927
+16	EEM_XFnp	176.000	0.921
+17	ArHdrxl_-OH	175.000	0.916
+18	T_HydroR	174.000	0.911
+19	Ether___-O-	173.000	0.906
+20	T_Radc	172.000	0.901
+21	T_MIRxx	171.000	0.895
+22	Kappa3	170.000	0.890
+23	EEM_F4	169.000	0.885
+24	EEM_F6	168.000	0.880
+25	N_AOXSites	167.000	0.874
+26	SaaN	166.000	0.869
+27	Pi_FMi3	165.000	0.864
+28	NPA_Q3	164.000	0.859
+29	NPA_Q2	163.000	0.853
+30	Guandne_>NC(=N-)N<	162.000	0.848
+31	F_HBP	161.000	0.843
+32	N_IoAcAt	160.000	0.838
+33	SsssCH	159.000	0.832
+34	Pi_Q2	158.000	0.827
+35	Pi_Q1	157.000	0.822
+36	ArNitrog_=N-	156.000	0.817
+37	Pi_FPl5	155.000	0.812
+38	Pi_FPl6	154.000	0.806
+39	Pi_FMi6	153.000	0.801
+40	ArCbxyl_-COOH	152.000	0.796
+41	Pi_FMi1	151.000	0.791
+42	H_Azo	150.000	0.785
+43	Pi_AFPlc	149.000	0.780
+44	M_NO2	148.000	0.775
+45	PriAmAro_-NH2	147.000	0.770
+46	SdssC	146.000	0.764
+47	T_Rada	145.000	0.759
+48	T_MIRyy	144.000	0.754
+49	QAvgNeg	143.000	0.749
+50	SaasC	142.000	0.743
+51	T_Dipole	141.000	0.738
+52	MinQ	140.000	0.733
+53	EEM_F5	139.000	0.728
+54	Thioamd_C(=S)N<	138.000	0.723
+55	SaadC	137.000	0.717
+56	Sulfonmd_-SO2-N<	136.000	0.712
+57	Pi_Q5	135.000	0.707
+58	Pi_FPl2	134.000	0.702
+59	F_DbleB	133.000	0.696
+60	N_Pisyms	132.000	0.691
+61	SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+62	Amidine_C(=N-)N<	130.000	0.681
+63	Herndon	129.000	0.675
+64	FormalQ	128.000	0.670
+65	N_FrRotB	127.000	0.665
+66	T_Radmax	126.000	0.660
+67	F_AFRBWF	125.000	0.654
+68	SaasN	124.000	0.649
+69	Hdrzone_=N-N<	123.000	0.644
+70	M_PRX	122.000	0.639
+71	EEM_NFpl	121.000	0.634
+72	SsF	120.000	0.628
+73	Ester___C(=O)OC	119.000	0.623
+74	EEM_AFon	118.000	0.618
+75	Carbonyl_C=O	117.000	0.613
+76	Amide___C(=O)N<	116.000	0.607
+77	SssssC	115.000	0.602
+78	StsC	114.000	0.597
+79	Steroid	113.000	0.592
+80	Pi_FMi2	112.000	0.586
+81	NPA_Q5	111.000	0.581
+82	NPA_Q4	110.000	0.576
+83	SddsN	109.000	0.571
+84	SHaaCH	108.000	0.565
+85	AlHdrxl_-OH	107.000	0.560
+86	EEM_XFon	106.000	0.555
+87	SaaNH	105.000	0.550
+88	SHdNH	104.000	0.545
+89	SdNH	103.000	0.539
+90	EEM_NFc	102.000	0.534
+91	EEM_NFnp	101.000	0.529
+92	QuaAmine_>[N+]<	100.000	0.524
+93	SHdCH2	99.000	0.518
+94	M_AMP	98.000	0.513
+95	AlphaAA	97.000	0.508
+96	Pi_Q4	96.000	0.503
+97	Pi_Q3	95.000	0.497
+98	SdO	94.000	0.492
+99	SdssS	93.000	0.487
+100	NPA_MaxQ	92.000	0.482
+101	Carbmte_>NC(=O)O<	91.000	0.476
+102	SssO	90.000	0.471
+103	Oxime___=N-O-	89.000	0.466
+104	NPA_Q6	88.000	0.461
+105	N_Phsphr	87.000	0.455
+106	SaaO	86.000	0.450
+107	Pi_AQc	85.000	0.445
+108	Triazo__-N-N-N-	84.000	0.440
+109	SsssN	83.000	0.435
+110	Pi_AQo	82.000	0.429
+111	Pi_AFMic	81.000	0.424
+112	N_Sulfur	80.000	0.419
+113	HBAoch	79.000	0.414
+114	Pi_Q6	78.000	0.408
+115	M_QN	77.000	0.403
+116	SaaaN	76.000	0.398
+117	PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+118	IHB	74.000	0.387
+119	Pi_FPl3	73.000	0.382
+120	SssCH2	72.000	0.377
+121	SsBr	71.000	0.372
+122	Pi_FPl1	70.000	0.366
+123	Pi_FMi5	69.000	0.361
+124	T_Grav3	68.000	0.356
+125	SddssS	67.000	0.351
+126	Sulfamid_>NSO2N<	66.000	0.346
+127	Sulfide_-S-	65.000	0.340
+128	Sulfoxde_>S=O	64.000	0.335
+129	SssssN	63.000	0.330
+130	PriAmAli_-NH2	62.000	0.325
+131	SsI	61.000	0.319
+132	N_AlipR	60.000	0.314
+133	Pi_MaxFMi	59.000	0.309
+134	SHsNH2	58.000	0.304
+135	TerAmine_>N-	57.000	0.298
+136	SecAmine_>NH	56.000	0.293
+137	Phspate_O=PO3<-	55.000	0.288
+138	SPhspat_S=PO3<-	54.000	0.283
+139	HBAnch	53.000	0.277
+140	Imide___O=C(N-)C=O	52.000	0.272
+141	H_ArAcid	51.000	0.267
+142	Pi_MaxQ	50.000	0.262
+143	SdsN	49.000	0.257
+144	ABSQon	48.000	0.251
+145	HydxlAmn_>N-O-	47.000	0.246
+146	Pi_FPl4	46.000	0.241
+147	StN	45.000	0.236
+148	SHdsCH	44.000	0.230
+149	SdsCH	43.000	0.225
+150	H_AlPyri	42.000	0.220
+151	Sulfone_>S(=O)=O	41.000	0.215
+152	ThioAmin_>N-S-	40.000	0.209
+153	PHB	39.000	0.204
+154	N_IsolLP	38.000	0.199
+155	FZwitter	37.000	0.194
+156	SdS	36.000	0.188
+157	F_TpleB	35.000	0.183
+158	F_NLP	34.000	0.178
+159	EEM_MaxF	33.000	0.173
+160	SaaS	32.000	0.168
+161	SssS	31.000	0.162
+162	Pi_FMi4	30.000	0.157
+163	EqualChi	29.000	0.152
+164	SaaaC	28.000	0.147
+165	Sulfonat_-SO3-	27.000	0.141
+166	EqualEta	26.000	0.136
+167	AP_FWeight	25.000	0.131
+168	Pi_AQn	24.000	0.126
+169	Urea____>NC(=O)N<	23.000	0.120
+170	MaxQ	22.000	0.115
+171	EEM_NFon	21.000	0.110
+172	PriSlfmd_-SO2-NH2	20.000	0.105
+173	SPhspatS_S=PS(k)O(3-k)<-	19.000	0.099
+174	Blbn_J	18.000	0.094
+175	AlCbxyl_-COOH	17.000	0.089
+176	H_AlAcid	16.000	0.084
+177	SsCH3	15.000	0.079
+178	Pi_MaxFPl	14.000	0.073
+179	M_RNG	13.000	0.068
+180	Disulfde_-S-S-	12.000	0.063
+181	H_MultiN	11.000	0.058
+182	EEM_XFc	10.000	0.052
+183	Imine___=N-	9.000	0.047
+184	EEM_XFpl	8.000	0.042
+185	Hdrzine_>N-N<	7.000	0.037
+186	SHtCH	6.000	0.031
+187	SsCl	5.000	0.026
+188	T_RDmtr	4.000	0.021
+189	M_HB	3.000	0.016
+190	H_Nitro	2.000	0.010
+191	H_AmAcid	1.000	0.005
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:12 下午
+ANNs: 33, Neurons: 1, Inputs: 25, Weights = 28
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 1 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.83	0.91
+Specificity	0.86	0.81
+Youden	0.69	0.72
+MCC	0.67	0.69
+FalseRate	0.15	0.16
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:13 下午
+ANNs: 33, Neurons: 1, Inputs: 50, Weights = 53
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 1 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.87	0.90
+Specificity	0.87	0.81
+Youden	0.74	0.71
+MCC	0.72	0.68
+FalseRate	0.13	0.16
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:13 下午
+ANNs: 33, Neurons: 1, Inputs: 75, Weights = 78
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 1 neurons and 75 inputs :
+          	Training	Test
+Sensitivity	0.88	0.90
+Specificity	0.89	0.84
+Youden	0.77	0.74
+MCC	0.75	0.71
+FalseRate	0.11	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:13 下午
+ANNs: 33, Neurons: 1, Inputs: 100, Weights = 103
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 1 neurons and 100 inputs :
+          	Training	Test
+Sensitivity	0.88	0.90
+Specificity	0.88	0.83
+Youden	0.76	0.73
+MCC	0.75	0.71
+FalseRate	0.12	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:14 下午
+ANNs: 33, Neurons: 1, Inputs: 125, Weights = 128
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 1 neurons and 125 inputs :
+          	Training	Test
+Sensitivity	0.87	0.88
+Specificity	0.89	0.83
+Youden	0.75	0.70
+MCC	0.74	0.68
+FalseRate	0.12	0.16
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:14 下午
+ANNs: 33, Neurons: 1, Inputs: 150, Weights = 153
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+Sulfamid_>NSO2N<	66.000	0.346
+Sulfide_-S-	65.000	0.340
+Sulfoxde_>S=O	64.000	0.335
+SssssN	63.000	0.330
+PriAmAli_-NH2	62.000	0.325
+SsI	61.000	0.319
+N_AlipR	60.000	0.314
+Pi_MaxFMi	59.000	0.309
+SHsNH2	58.000	0.304
+TerAmine_>N-	57.000	0.298
+SecAmine_>NH	56.000	0.293
+Phspate_O=PO3<-	55.000	0.288
+SPhspat_S=PO3<-	54.000	0.283
+HBAnch	53.000	0.277
+Imide___O=C(N-)C=O	52.000	0.272
+H_ArAcid	51.000	0.267
+Pi_MaxQ	50.000	0.262
+SdsN	49.000	0.257
+ABSQon	48.000	0.251
+HydxlAmn_>N-O-	47.000	0.246
+Pi_FPl4	46.000	0.241
+StN	45.000	0.236
+SHdsCH	44.000	0.230
+SdsCH	43.000	0.225
+H_AlPyri	42.000	0.220
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 1 neurons and 150 inputs :
+          	Training	Test
+Sensitivity	0.87	0.90
+Specificity	0.89	0.82
+Youden	0.77	0.72
+MCC	0.76	0.68
+FalseRate	0.11	0.16
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:14 下午
+ANNs: 33, Neurons: 1, Inputs: 175, Weights = 178
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+Sulfamid_>NSO2N<	66.000	0.346
+Sulfide_-S-	65.000	0.340
+Sulfoxde_>S=O	64.000	0.335
+SssssN	63.000	0.330
+PriAmAli_-NH2	62.000	0.325
+SsI	61.000	0.319
+N_AlipR	60.000	0.314
+Pi_MaxFMi	59.000	0.309
+SHsNH2	58.000	0.304
+TerAmine_>N-	57.000	0.298
+SecAmine_>NH	56.000	0.293
+Phspate_O=PO3<-	55.000	0.288
+SPhspat_S=PO3<-	54.000	0.283
+HBAnch	53.000	0.277
+Imide___O=C(N-)C=O	52.000	0.272
+H_ArAcid	51.000	0.267
+Pi_MaxQ	50.000	0.262
+SdsN	49.000	0.257
+ABSQon	48.000	0.251
+HydxlAmn_>N-O-	47.000	0.246
+Pi_FPl4	46.000	0.241
+StN	45.000	0.236
+SHdsCH	44.000	0.230
+SdsCH	43.000	0.225
+H_AlPyri	42.000	0.220
+Sulfone_>S(=O)=O	41.000	0.215
+ThioAmin_>N-S-	40.000	0.209
+PHB	39.000	0.204
+N_IsolLP	38.000	0.199
+FZwitter	37.000	0.194
+SdS	36.000	0.188
+F_TpleB	35.000	0.183
+F_NLP	34.000	0.178
+EEM_MaxF	33.000	0.173
+SaaS	32.000	0.168
+SssS	31.000	0.162
+Pi_FMi4	30.000	0.157
+EqualChi	29.000	0.152
+SaaaC	28.000	0.147
+Sulfonat_-SO3-	27.000	0.141
+EqualEta	26.000	0.136
+AP_FWeight	25.000	0.131
+Pi_AQn	24.000	0.126
+Urea____>NC(=O)N<	23.000	0.120
+MaxQ	22.000	0.115
+EEM_NFon	21.000	0.110
+PriSlfmd_-SO2-NH2	20.000	0.105
+SPhspatS_S=PS(k)O(3-k)<-	19.000	0.099
+Blbn_J	18.000	0.094
+AlCbxyl_-COOH	17.000	0.089
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 1 neurons and 175 inputs :
+          	Training	Test
+Sensitivity	0.88	0.90
+Specificity	0.90	0.83
+Youden	0.77	0.73
+MCC	0.76	0.70
+FalseRate	0.11	0.15
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:15 下午
+ANNs: 33, Neurons: 1, Inputs: 191, Weights = 194
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+Sulfamid_>NSO2N<	66.000	0.346
+Sulfide_-S-	65.000	0.340
+Sulfoxde_>S=O	64.000	0.335
+SssssN	63.000	0.330
+PriAmAli_-NH2	62.000	0.325
+SsI	61.000	0.319
+N_AlipR	60.000	0.314
+Pi_MaxFMi	59.000	0.309
+SHsNH2	58.000	0.304
+TerAmine_>N-	57.000	0.298
+SecAmine_>NH	56.000	0.293
+Phspate_O=PO3<-	55.000	0.288
+SPhspat_S=PO3<-	54.000	0.283
+HBAnch	53.000	0.277
+Imide___O=C(N-)C=O	52.000	0.272
+H_ArAcid	51.000	0.267
+Pi_MaxQ	50.000	0.262
+SdsN	49.000	0.257
+ABSQon	48.000	0.251
+HydxlAmn_>N-O-	47.000	0.246
+Pi_FPl4	46.000	0.241
+StN	45.000	0.236
+SHdsCH	44.000	0.230
+SdsCH	43.000	0.225
+H_AlPyri	42.000	0.220
+Sulfone_>S(=O)=O	41.000	0.215
+ThioAmin_>N-S-	40.000	0.209
+PHB	39.000	0.204
+N_IsolLP	38.000	0.199
+FZwitter	37.000	0.194
+SdS	36.000	0.188
+F_TpleB	35.000	0.183
+F_NLP	34.000	0.178
+EEM_MaxF	33.000	0.173
+SaaS	32.000	0.168
+SssS	31.000	0.162
+Pi_FMi4	30.000	0.157
+EqualChi	29.000	0.152
+SaaaC	28.000	0.147
+Sulfonat_-SO3-	27.000	0.141
+EqualEta	26.000	0.136
+AP_FWeight	25.000	0.131
+Pi_AQn	24.000	0.126
+Urea____>NC(=O)N<	23.000	0.120
+MaxQ	22.000	0.115
+EEM_NFon	21.000	0.110
+PriSlfmd_-SO2-NH2	20.000	0.105
+SPhspatS_S=PS(k)O(3-k)<-	19.000	0.099
+Blbn_J	18.000	0.094
+AlCbxyl_-COOH	17.000	0.089
+H_AlAcid	16.000	0.084
+SsCH3	15.000	0.079
+Pi_MaxFPl	14.000	0.073
+M_RNG	13.000	0.068
+Disulfde_-S-S-	12.000	0.063
+H_MultiN	11.000	0.058
+EEM_XFc	10.000	0.052
+Imine___=N-	9.000	0.047
+EEM_XFpl	8.000	0.042
+Hdrzine_>N-N<	7.000	0.037
+SHtCH	6.000	0.031
+SsCl	5.000	0.026
+T_RDmtr	4.000	0.021
+M_HB	3.000	0.016
+H_Nitro	2.000	0.010
+H_AmAcid	1.000	0.005
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 1 neurons and 191 inputs :
+          	Training	Test
+Sensitivity	0.88	0.89
+Specificity	0.91	0.84
+Youden	0.79	0.73
+MCC	0.78	0.70
+FalseRate	0.10	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:15 下午
+ANNs: 33, Neurons: 3, Inputs: 25, Weights = 82
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 3 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.84	0.91
+Specificity	0.87	0.80
+Youden	0.71	0.72
+MCC	0.70	0.68
+FalseRate	0.14	0.16
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:16 下午
+ANNs: 33, Neurons: 3, Inputs: 50, Weights = 157
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 3 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.87	0.89
+Specificity	0.89	0.80
+Youden	0.76	0.69
+MCC	0.74	0.66
+FalseRate	0.12	0.17
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:16 下午
+ANNs: 33, Neurons: 3, Inputs: 75, Weights = 232
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 3 neurons and 75 inputs :
+          	Training	Test
+Sensitivity	0.87	0.93
+Specificity	0.89	0.84
+Youden	0.76	0.77
+MCC	0.75	0.73
+FalseRate	0.11	0.13
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:16 下午
+ANNs: 33, Neurons: 3, Inputs: 100, Weights = 307
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 3 neurons and 100 inputs :
+          	Training	Test
+Sensitivity	0.88	0.89
+Specificity	0.90	0.83
+Youden	0.78	0.72
+MCC	0.76	0.69
+FalseRate	0.11	0.15
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:17 下午
+ANNs: 33, Neurons: 3, Inputs: 125, Weights = 382
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 3 neurons and 125 inputs :
+          	Training	Test
+Sensitivity	0.88	0.89
+Specificity	0.90	0.83
+Youden	0.78	0.72
+MCC	0.77	0.69
+FalseRate	0.11	0.15
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:18 下午
+ANNs: 33, Neurons: 3, Inputs: 150, Weights = 457
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+Sulfamid_>NSO2N<	66.000	0.346
+Sulfide_-S-	65.000	0.340
+Sulfoxde_>S=O	64.000	0.335
+SssssN	63.000	0.330
+PriAmAli_-NH2	62.000	0.325
+SsI	61.000	0.319
+N_AlipR	60.000	0.314
+Pi_MaxFMi	59.000	0.309
+SHsNH2	58.000	0.304
+TerAmine_>N-	57.000	0.298
+SecAmine_>NH	56.000	0.293
+Phspate_O=PO3<-	55.000	0.288
+SPhspat_S=PO3<-	54.000	0.283
+HBAnch	53.000	0.277
+Imide___O=C(N-)C=O	52.000	0.272
+H_ArAcid	51.000	0.267
+Pi_MaxQ	50.000	0.262
+SdsN	49.000	0.257
+ABSQon	48.000	0.251
+HydxlAmn_>N-O-	47.000	0.246
+Pi_FPl4	46.000	0.241
+StN	45.000	0.236
+SHdsCH	44.000	0.230
+SdsCH	43.000	0.225
+H_AlPyri	42.000	0.220
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 3 neurons and 150 inputs :
+          	Training	Test
+Sensitivity	0.87	0.89
+Specificity	0.90	0.83
+Youden	0.77	0.72
+MCC	0.77	0.69
+FalseRate	0.11	0.15
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:19 下午
+ANNs: 33, Neurons: 3, Inputs: 175, Weights = 532
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+Sulfamid_>NSO2N<	66.000	0.346
+Sulfide_-S-	65.000	0.340
+Sulfoxde_>S=O	64.000	0.335
+SssssN	63.000	0.330
+PriAmAli_-NH2	62.000	0.325
+SsI	61.000	0.319
+N_AlipR	60.000	0.314
+Pi_MaxFMi	59.000	0.309
+SHsNH2	58.000	0.304
+TerAmine_>N-	57.000	0.298
+SecAmine_>NH	56.000	0.293
+Phspate_O=PO3<-	55.000	0.288
+SPhspat_S=PO3<-	54.000	0.283
+HBAnch	53.000	0.277
+Imide___O=C(N-)C=O	52.000	0.272
+H_ArAcid	51.000	0.267
+Pi_MaxQ	50.000	0.262
+SdsN	49.000	0.257
+ABSQon	48.000	0.251
+HydxlAmn_>N-O-	47.000	0.246
+Pi_FPl4	46.000	0.241
+StN	45.000	0.236
+SHdsCH	44.000	0.230
+SdsCH	43.000	0.225
+H_AlPyri	42.000	0.220
+Sulfone_>S(=O)=O	41.000	0.215
+ThioAmin_>N-S-	40.000	0.209
+PHB	39.000	0.204
+N_IsolLP	38.000	0.199
+FZwitter	37.000	0.194
+SdS	36.000	0.188
+F_TpleB	35.000	0.183
+F_NLP	34.000	0.178
+EEM_MaxF	33.000	0.173
+SaaS	32.000	0.168
+SssS	31.000	0.162
+Pi_FMi4	30.000	0.157
+EqualChi	29.000	0.152
+SaaaC	28.000	0.147
+Sulfonat_-SO3-	27.000	0.141
+EqualEta	26.000	0.136
+AP_FWeight	25.000	0.131
+Pi_AQn	24.000	0.126
+Urea____>NC(=O)N<	23.000	0.120
+MaxQ	22.000	0.115
+EEM_NFon	21.000	0.110
+PriSlfmd_-SO2-NH2	20.000	0.105
+SPhspatS_S=PS(k)O(3-k)<-	19.000	0.099
+Blbn_J	18.000	0.094
+AlCbxyl_-COOH	17.000	0.089
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 3 neurons and 175 inputs :
+          	Training	Test
+Sensitivity	0.88	0.90
+Specificity	0.91	0.83
+Youden	0.79	0.73
+MCC	0.78	0.71
+FalseRate	0.10	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:21 下午
+ANNs: 33, Neurons: 3, Inputs: 191, Weights = 580
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+Sulfamid_>NSO2N<	66.000	0.346
+Sulfide_-S-	65.000	0.340
+Sulfoxde_>S=O	64.000	0.335
+SssssN	63.000	0.330
+PriAmAli_-NH2	62.000	0.325
+SsI	61.000	0.319
+N_AlipR	60.000	0.314
+Pi_MaxFMi	59.000	0.309
+SHsNH2	58.000	0.304
+TerAmine_>N-	57.000	0.298
+SecAmine_>NH	56.000	0.293
+Phspate_O=PO3<-	55.000	0.288
+SPhspat_S=PO3<-	54.000	0.283
+HBAnch	53.000	0.277
+Imide___O=C(N-)C=O	52.000	0.272
+H_ArAcid	51.000	0.267
+Pi_MaxQ	50.000	0.262
+SdsN	49.000	0.257
+ABSQon	48.000	0.251
+HydxlAmn_>N-O-	47.000	0.246
+Pi_FPl4	46.000	0.241
+StN	45.000	0.236
+SHdsCH	44.000	0.230
+SdsCH	43.000	0.225
+H_AlPyri	42.000	0.220
+Sulfone_>S(=O)=O	41.000	0.215
+ThioAmin_>N-S-	40.000	0.209
+PHB	39.000	0.204
+N_IsolLP	38.000	0.199
+FZwitter	37.000	0.194
+SdS	36.000	0.188
+F_TpleB	35.000	0.183
+F_NLP	34.000	0.178
+EEM_MaxF	33.000	0.173
+SaaS	32.000	0.168
+SssS	31.000	0.162
+Pi_FMi4	30.000	0.157
+EqualChi	29.000	0.152
+SaaaC	28.000	0.147
+Sulfonat_-SO3-	27.000	0.141
+EqualEta	26.000	0.136
+AP_FWeight	25.000	0.131
+Pi_AQn	24.000	0.126
+Urea____>NC(=O)N<	23.000	0.120
+MaxQ	22.000	0.115
+EEM_NFon	21.000	0.110
+PriSlfmd_-SO2-NH2	20.000	0.105
+SPhspatS_S=PS(k)O(3-k)<-	19.000	0.099
+Blbn_J	18.000	0.094
+AlCbxyl_-COOH	17.000	0.089
+H_AlAcid	16.000	0.084
+SsCH3	15.000	0.079
+Pi_MaxFPl	14.000	0.073
+M_RNG	13.000	0.068
+Disulfde_-S-S-	12.000	0.063
+H_MultiN	11.000	0.058
+EEM_XFc	10.000	0.052
+Imine___=N-	9.000	0.047
+EEM_XFpl	8.000	0.042
+Hdrzine_>N-N<	7.000	0.037
+SHtCH	6.000	0.031
+SsCl	5.000	0.026
+T_RDmtr	4.000	0.021
+M_HB	3.000	0.016
+H_Nitro	2.000	0.010
+H_AmAcid	1.000	0.005
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 3 neurons and 191 inputs :
+          	Training	Test
+Sensitivity	0.88	0.89
+Specificity	0.91	0.85
+Youden	0.80	0.73
+MCC	0.79	0.71
+FalseRate	0.10	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:25 下午
+ANNs: 33, Neurons: 5, Inputs: 25, Weights = 136
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 5 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.85	0.89
+Specificity	0.88	0.80
+Youden	0.74	0.69
+MCC	0.72	0.66
+FalseRate	0.13	0.17
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:25 下午
+ANNs: 33, Neurons: 5, Inputs: 50, Weights = 261
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 5 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.89	0.89
+Specificity	0.90	0.80
+Youden	0.79	0.68
+MCC	0.77	0.65
+FalseRate	0.11	0.17
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:26 下午
+ANNs: 33, Neurons: 5, Inputs: 75, Weights = 386
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 5 neurons and 75 inputs :
+          	Training	Test
+Sensitivity	0.90	0.91
+Specificity	0.91	0.83
+Youden	0.81	0.75
+MCC	0.79	0.72
+FalseRate	0.09	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:26 下午
+ANNs: 33, Neurons: 5, Inputs: 100, Weights = 511
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 5 neurons and 100 inputs :
+          	Training	Test
+Sensitivity	0.87	0.91
+Specificity	0.90	0.83
+Youden	0.77	0.75
+MCC	0.76	0.72
+FalseRate	0.11	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:28 下午
+ANNs: 33, Neurons: 5, Inputs: 125, Weights = 636
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 5 neurons and 125 inputs :
+          	Training	Test
+Sensitivity	0.89	0.89
+Specificity	0.92	0.83
+Youden	0.80	0.72
+MCC	0.79	0.69
+FalseRate	0.09	0.15
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:33 下午
+ANNs: 33, Neurons: 5, Inputs: 150, Weights = 761
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+Sulfamid_>NSO2N<	66.000	0.346
+Sulfide_-S-	65.000	0.340
+Sulfoxde_>S=O	64.000	0.335
+SssssN	63.000	0.330
+PriAmAli_-NH2	62.000	0.325
+SsI	61.000	0.319
+N_AlipR	60.000	0.314
+Pi_MaxFMi	59.000	0.309
+SHsNH2	58.000	0.304
+TerAmine_>N-	57.000	0.298
+SecAmine_>NH	56.000	0.293
+Phspate_O=PO3<-	55.000	0.288
+SPhspat_S=PO3<-	54.000	0.283
+HBAnch	53.000	0.277
+Imide___O=C(N-)C=O	52.000	0.272
+H_ArAcid	51.000	0.267
+Pi_MaxQ	50.000	0.262
+SdsN	49.000	0.257
+ABSQon	48.000	0.251
+HydxlAmn_>N-O-	47.000	0.246
+Pi_FPl4	46.000	0.241
+StN	45.000	0.236
+SHdsCH	44.000	0.230
+SdsCH	43.000	0.225
+H_AlPyri	42.000	0.220
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 5 neurons and 150 inputs :
+          	Training	Test
+Sensitivity	0.88	0.91
+Specificity	0.91	0.83
+Youden	0.80	0.74
+MCC	0.79	0.71
+FalseRate	0.10	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:39 下午
+ANNs: 33, Neurons: 5, Inputs: 175, Weights = 886
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+Carbmte_>NC(=O)O<	91.000	0.476
+SssO	90.000	0.471
+Oxime___=N-O-	89.000	0.466
+NPA_Q6	88.000	0.461
+N_Phsphr	87.000	0.455
+SaaO	86.000	0.450
+Pi_AQc	85.000	0.445
+Triazo__-N-N-N-	84.000	0.440
+SsssN	83.000	0.435
+Pi_AQo	82.000	0.429
+Pi_AFMic	81.000	0.424
+N_Sulfur	80.000	0.419
+HBAoch	79.000	0.414
+Pi_Q6	78.000	0.408
+M_QN	77.000	0.403
+SaaaN	76.000	0.398
+PhspatN_O=PN(n)O(3-n)<<<	75.000	0.393
+IHB	74.000	0.387
+Pi_FPl3	73.000	0.382
+SssCH2	72.000	0.377
+SsBr	71.000	0.372
+Pi_FPl1	70.000	0.366
+Pi_FMi5	69.000	0.361
+T_Grav3	68.000	0.356
+SddssS	67.000	0.351
+Sulfamid_>NSO2N<	66.000	0.346
+Sulfide_-S-	65.000	0.340
+Sulfoxde_>S=O	64.000	0.335
+SssssN	63.000	0.330
+PriAmAli_-NH2	62.000	0.325
+SsI	61.000	0.319
+N_AlipR	60.000	0.314
+Pi_MaxFMi	59.000	0.309
+SHsNH2	58.000	0.304
+TerAmine_>N-	57.000	0.298
+SecAmine_>NH	56.000	0.293
+Phspate_O=PO3<-	55.000	0.288
+SPhspat_S=PO3<-	54.000	0.283
+HBAnch	53.000	0.277
+Imide___O=C(N-)C=O	52.000	0.272
+H_ArAcid	51.000	0.267
+Pi_MaxQ	50.000	0.262
+SdsN	49.000	0.257
+ABSQon	48.000	0.251
+HydxlAmn_>N-O-	47.000	0.246
+Pi_FPl4	46.000	0.241
+StN	45.000	0.236
+SHdsCH	44.000	0.230
+SdsCH	43.000	0.225
+H_AlPyri	42.000	0.220
+Sulfone_>S(=O)=O	41.000	0.215
+ThioAmin_>N-S-	40.000	0.209
+PHB	39.000	0.204
+N_IsolLP	38.000	0.199
+FZwitter	37.000	0.194
+SdS	36.000	0.188
+F_TpleB	35.000	0.183
+F_NLP	34.000	0.178
+EEM_MaxF	33.000	0.173
+SaaS	32.000	0.168
+SssS	31.000	0.162
+Pi_FMi4	30.000	0.157
+EqualChi	29.000	0.152
+SaaaC	28.000	0.147
+Sulfonat_-SO3-	27.000	0.141
+EqualEta	26.000	0.136
+AP_FWeight	25.000	0.131
+Pi_AQn	24.000	0.126
+Urea____>NC(=O)N<	23.000	0.120
+MaxQ	22.000	0.115
+EEM_NFon	21.000	0.110
+PriSlfmd_-SO2-NH2	20.000	0.105
+SPhspatS_S=PS(k)O(3-k)<-	19.000	0.099
+Blbn_J	18.000	0.094
+AlCbxyl_-COOH	17.000	0.089
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 5 neurons and 175 inputs :
+          	Training	Test
+Sensitivity	0.87	0.89
+Specificity	0.91	0.84
+Youden	0.79	0.73
+MCC	0.78	0.70
+FalseRate	0.10	0.14
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 5 neurons and 191 inputs was skipped because the number of
+   optimized weights (966) exceeds 75 % of number of data points (1185).
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:48 下午
+ANNs: 33, Neurons: 7, Inputs: 25, Weights = 190
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 7 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.86	0.86
+Specificity	0.89	0.81
+Youden	0.75	0.67
+MCC	0.74	0.64
+FalseRate	0.12	0.17
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:49 下午
+ANNs: 33, Neurons: 7, Inputs: 50, Weights = 365
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 7 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.90	0.90
+Specificity	0.90	0.80
+Youden	0.80	0.70
+MCC	0.79	0.67
+FalseRate	0.10	0.16
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:49 下午
+ANNs: 33, Neurons: 7, Inputs: 75, Weights = 540
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 7 neurons and 75 inputs :
+          	Training	Test
+Sensitivity	0.89	0.91
+Specificity	0.91	0.83
+Youden	0.80	0.74
+MCC	0.79	0.71
+FalseRate	0.10	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:52 下午
+ANNs: 33, Neurons: 7, Inputs: 100, Weights = 715
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+Amide___C(=O)N<	116.000	0.607
+SssssC	115.000	0.602
+StsC	114.000	0.597
+Steroid	113.000	0.592
+Pi_FMi2	112.000	0.586
+NPA_Q5	111.000	0.581
+NPA_Q4	110.000	0.576
+SddsN	109.000	0.571
+SHaaCH	108.000	0.565
+AlHdrxl_-OH	107.000	0.560
+EEM_XFon	106.000	0.555
+SaaNH	105.000	0.550
+SHdNH	104.000	0.545
+SdNH	103.000	0.539
+EEM_NFc	102.000	0.534
+EEM_NFnp	101.000	0.529
+QuaAmine_>[N+]<	100.000	0.524
+SHdCH2	99.000	0.518
+M_AMP	98.000	0.513
+AlphaAA	97.000	0.508
+Pi_Q4	96.000	0.503
+Pi_Q3	95.000	0.497
+SdO	94.000	0.492
+SdssS	93.000	0.487
+NPA_MaxQ	92.000	0.482
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 7 neurons and 100 inputs :
+          	Training	Test
+Sensitivity	0.89	0.91
+Specificity	0.92	0.82
+Youden	0.81	0.73
+MCC	0.80	0.70
+FalseRate	0.09	0.15
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 7 neurons and 125 inputs was skipped because the number of
+   optimized weights (890) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 7 neurons and 150 inputs was skipped because the number of
+   optimized weights (1065) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 7 neurons and 175 inputs was skipped because the number of
+   optimized weights (1240) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 7 neurons and 191 inputs was skipped because the number of
+   optimized weights (1352) exceeds 75 % of number of data points (1185).
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:58 下午
+ANNs: 33, Neurons: 9, Inputs: 25, Weights = 244
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 9 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.87	0.85
+Specificity	0.90	0.81
+Youden	0.77	0.66
+MCC	0.76	0.63
+FalseRate	0.11	0.18
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:46:59 下午
+ANNs: 33, Neurons: 9, Inputs: 50, Weights = 469
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 9 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.90	0.90
+Specificity	0.90	0.81
+Youden	0.79	0.71
+MCC	0.78	0.68
+FalseRate	0.10	0.16
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:00 下午
+ANNs: 33, Neurons: 9, Inputs: 75, Weights = 694
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 9 neurons and 75 inputs :
+          	Training	Test
+Sensitivity	0.90	0.91
+Specificity	0.91	0.84
+Youden	0.80	0.75
+MCC	0.79	0.72
+FalseRate	0.10	0.14
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 9 neurons and 100 inputs was skipped because the number of
+   optimized weights (919) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 9 neurons and 125 inputs was skipped because the number of
+   optimized weights (1144) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 9 neurons and 150 inputs was skipped because the number of
+   optimized weights (1369) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 9 neurons and 175 inputs was skipped because the number of
+   optimized weights (1594) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 9 neurons and 191 inputs was skipped because the number of
+   optimized weights (1738) exceeds 75 % of number of data points (1185).
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:05 下午
+ANNs: 33, Neurons: 11, Inputs: 25, Weights = 298
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 11 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.88	0.86
+Specificity	0.89	0.82
+Youden	0.77	0.68
+MCC	0.75	0.66
+FalseRate	0.11	0.16
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:06 下午
+ANNs: 33, Neurons: 11, Inputs: 50, Weights = 573
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 11 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.91	0.90
+Specificity	0.91	0.83
+Youden	0.82	0.73
+MCC	0.81	0.71
+FalseRate	0.09	0.14
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:10 下午
+ANNs: 33, Neurons: 11, Inputs: 75, Weights = 848
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+T_Dipole	141.000	0.738
+MinQ	140.000	0.733
+EEM_F5	139.000	0.728
+Thioamd_C(=S)N<	138.000	0.723
+SaadC	137.000	0.717
+Sulfonmd_-SO2-N<	136.000	0.712
+Pi_Q5	135.000	0.707
+Pi_FPl2	134.000	0.702
+F_DbleB	133.000	0.696
+N_Pisyms	132.000	0.691
+SPhspatN_S=PN(n)O(3-n)<<<	131.000	0.686
+Amidine_C(=N-)N<	130.000	0.681
+Herndon	129.000	0.675
+FormalQ	128.000	0.670
+N_FrRotB	127.000	0.665
+T_Radmax	126.000	0.660
+F_AFRBWF	125.000	0.654
+SaasN	124.000	0.649
+Hdrzone_=N-N<	123.000	0.644
+M_PRX	122.000	0.639
+EEM_NFpl	121.000	0.634
+SsF	120.000	0.628
+Ester___C(=O)OC	119.000	0.623
+EEM_AFon	118.000	0.618
+Carbonyl_C=O	117.000	0.613
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 11 neurons and 75 inputs :
+          	Training	Test
+Sensitivity	0.91	0.91
+Specificity	0.92	0.87
+Youden	0.83	0.78
+MCC	0.82	0.75
+FalseRate	0.08	0.12
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 11 neurons and 100 inputs was skipped because the number of
+   optimized weights (1123) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 11 neurons and 125 inputs was skipped because the number of
+   optimized weights (1398) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 11 neurons and 150 inputs was skipped because the number of
+   optimized weights (1673) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 11 neurons and 175 inputs was skipped because the number of
+   optimized weights (1948) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 11 neurons and 191 inputs was skipped because the number of
+   optimized weights (2124) exceeds 75 % of number of data points (1185).
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:18 下午
+ANNs: 33, Neurons: 13, Inputs: 25, Weights = 352
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 13 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.87	0.86
+Specificity	0.89	0.82
+Youden	0.76	0.68
+MCC	0.75	0.65
+FalseRate	0.11	0.17
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:19 下午
+ANNs: 33, Neurons: 13, Inputs: 50, Weights = 677
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 13 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.90	0.90
+Specificity	0.92	0.81
+Youden	0.82	0.71
+MCC	0.82	0.68
+FalseRate	0.08	0.16
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 13 neurons and 75 inputs was skipped because the number of
+   optimized weights (1002) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 13 neurons and 100 inputs was skipped because the number of
+   optimized weights (1327) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 13 neurons and 125 inputs was skipped because the number of
+   optimized weights (1652) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 13 neurons and 150 inputs was skipped because the number of
+   optimized weights (1977) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 13 neurons and 175 inputs was skipped because the number of
+   optimized weights (2302) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 13 neurons and 191 inputs was skipped because the number of
+   optimized weights (2510) exceeds 75 % of number of data points (1185).
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:25 下午
+ANNs: 33, Neurons: 15, Inputs: 25, Weights = 406
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 15 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.88	0.85
+Specificity	0.90	0.82
+Youden	0.78	0.67
+MCC	0.77	0.64
+FalseRate	0.11	0.17
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:26 下午
+ANNs: 33, Neurons: 15, Inputs: 50, Weights = 781
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 15 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.91	0.89
+Specificity	0.92	0.82
+Youden	0.83	0.71
+MCC	0.82	0.68
+FalseRate	0.08	0.16
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 15 neurons and 75 inputs was skipped because the number of
+   optimized weights (1156) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 15 neurons and 100 inputs was skipped because the number of
+   optimized weights (1531) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 15 neurons and 125 inputs was skipped because the number of
+   optimized weights (1906) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 15 neurons and 150 inputs was skipped because the number of
+   optimized weights (2281) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 15 neurons and 175 inputs was skipped because the number of
+   optimized weights (2656) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 15 neurons and 191 inputs was skipped because the number of
+   optimized weights (2896) exceeds 75 % of number of data points (1185).
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:33 下午
+ANNs: 33, Neurons: 17, Inputs: 25, Weights = 460
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 17 neurons and 25 inputs :
+          	Training	Test
+Sensitivity	0.88	0.86
+Specificity	0.90	0.82
+Youden	0.78	0.68
+MCC	0.77	0.65
+FalseRate	0.11	0.17
+
+
+# ================================================================================
+ANN ensemble 10/11/2023  9:47:34 下午
+ANNs: 33, Neurons: 17, Inputs: 50, Weights = 885
+     Training set size = 632
+     Verification set size = 316
+
+Descriptor	Sensitivity	Relative Sensitivity
+FAnion	191.000	1.000
+Wiener	190.000	0.995
+FUnion	189.000	0.990
+Nitrile_C#N	188.000	0.984
+H_Nitrle	187.000	0.979
+EEM_XFh	186.000	0.974
+M_POL	185.000	0.969
+H_Phenol	184.000	0.963
+EEM_AFpl	183.000	0.958
+F_SgleB	182.000	0.953
+N_Kekule	181.000	0.948
+Pi_MinQ	180.000	0.942
+HBDnch	179.000	0.937
+N_IoBaAt	178.000	0.932
+NPA_MinQ	177.000	0.927
+EEM_XFnp	176.000	0.921
+ArHdrxl_-OH	175.000	0.916
+T_HydroR	174.000	0.911
+Ether___-O-	173.000	0.906
+T_Radc	172.000	0.901
+T_MIRxx	171.000	0.895
+Kappa3	170.000	0.890
+EEM_F4	169.000	0.885
+EEM_F6	168.000	0.880
+N_AOXSites	167.000	0.874
+SaaN	166.000	0.869
+Pi_FMi3	165.000	0.864
+NPA_Q3	164.000	0.859
+NPA_Q2	163.000	0.853
+Guandne_>NC(=N-)N<	162.000	0.848
+F_HBP	161.000	0.843
+N_IoAcAt	160.000	0.838
+SsssCH	159.000	0.832
+Pi_Q2	158.000	0.827
+Pi_Q1	157.000	0.822
+ArNitrog_=N-	156.000	0.817
+Pi_FPl5	155.000	0.812
+Pi_FPl6	154.000	0.806
+Pi_FMi6	153.000	0.801
+ArCbxyl_-COOH	152.000	0.796
+Pi_FMi1	151.000	0.791
+H_Azo	150.000	0.785
+Pi_AFPlc	149.000	0.780
+M_NO2	148.000	0.775
+PriAmAro_-NH2	147.000	0.770
+SdssC	146.000	0.764
+T_Rada	145.000	0.759
+T_MIRyy	144.000	0.754
+QAvgNeg	143.000	0.749
+SaasC	142.000	0.743
+
+# --------------------------------------------------------------------------------
+For ANN Ensemble model using 17 neurons and 50 inputs :
+          	Training	Test
+Sensitivity	0.91	0.89
+Specificity	0.93	0.81
+Youden	0.84	0.70
+MCC	0.83	0.67
+FalseRate	0.08	0.16
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 17 neurons and 75 inputs was skipped because the number of
+   optimized weights (1310) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 17 neurons and 100 inputs was skipped because the number of
+   optimized weights (1735) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 17 neurons and 125 inputs was skipped because the number of
+   optimized weights (2160) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 17 neurons and 150 inputs was skipped because the number of
+   optimized weights (2585) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 17 neurons and 175 inputs was skipped because the number of
+   optimized weights (3010) exceeds 75 % of number of data points (1185).
+
+
+# --------------------------------------------------------------------------------
+**** ANNE with 17 neurons and 191 inputs was skipped because the number of
+   optimized weights (3282) exceeds 75 % of number of data points (1185).
+
+
+
+# ================================================================================
+Modeler (tm) run completed at 10/11/2023  9:47:44 下午
+Elapsed time =	2.15 minutes.
+# ================================================================================
+
